@@ -69,11 +69,12 @@ func run(repoDir string) error {
 			if err := runCommand(".", "tar", "-xf", tarFile); err != nil {
 				return err
 			}
-			if err := runCommand(".", "go", "run", "cloud.google.com/go/internal/postprocessor",
+			if err := runCommand(".", "go", "run", "./postprocessor",
 				"--client-root", "cloud.google.com/go",
 				"--googleapis-dir", repoDir,
 				"--branch", "julie-pr1",
 				"--dirs", "cloud.google.com/go/secretmanager",
+				"--pr-file", "prfile.txt",
 			); err != nil {
 				return err
 			}
