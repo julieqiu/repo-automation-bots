@@ -39,8 +39,10 @@ func run() error {
 	const (
 		generateGoogleapisGen = "docker-image/generate-googleapis-gen.sh"
 		commit                = ""
-		googleapisURL         = "https://github.com/googleapis/googleapis"
-		googleapisGenURL      = "https://github.com/googleapis/googleapis-gen"
+
+		googleapisURL    = "git@github.com:googleapis/googleapis"
+		googleapisGenURL = "git@github.com:googleapis/googleapis-gen"
+
 		googleapisDir         = "/tmp/generatetest/googleapis"
 		googleapisGenDir      = "/tmp/generatetest/googleapis-gen"
 		googleapisGenCloneDir = "/tmp/generatetest/googleapis-gen-clone"
@@ -49,22 +51,27 @@ func run() error {
 		helloFile             = "googleapis-gen/hello.txt"
 	)
 
-	/*
-		if err := os.RemoveAll("/tmp/generatetest"); err != nil {
+	if err := os.RemoveAll("/tmp/generatetest"); err != nil {
+		return err
+	}
+
+	for _, repo := range [][]string{
+		{googleapisURL, googleapisDir},
+		{googleapisGenURL, googleapisGenDir},
+		{googleapisGenURL, googleapisGenCloneDir},
+	} {
+		_, err := cloneRepo(repo[0], repo[1], sshKeyFile)
+		if err != nil {
 			return err
 		}
-	*/
+		slog.Info("Done!")
+	}
 
-	sha, err := createGoogleapis(googleapisURL, googleapisDir)
+	shaGoogleapis, err := computeSHATwoAgo(googleapisDir)
 	if err != nil {
 		return err
 	}
-
-	err = createGoogleapisGen(googleapisGenURL, googleapisGenDir, sha, garbageFile, bogusFile, helloFile)
-	if err != nil {
-		return err
-	}
-	err = createGoogleapisGenClone(googleapisGenURL, googleapisGenCloneDir)
+	err = modifyGoogleapisGen(googleapisGenDir, shaGoogleapis, garbageFile, bogusFile, helloFile)
 	if err != nil {
 		return err
 	}
@@ -72,11 +79,12 @@ func run() error {
 	if err != nil {
 		return err
 	}
-	confirmOutput(googleapisGenDir, garbageFile, bogusFile, helloFile)
+	confirmOutput(garbageFile, bogusFile, helloFile)
 	return nil
 }
 
 func cloneRepo(url, dir, sshKeyFile string) (*git.Repository, error) {
+	slog.Info(fmt.Sprintf("Cloning %s to %s", url, dir))
 	sshKey, err := os.ReadFile(sshKeyFile)
 	if err != nil {
 		return nil, err
@@ -92,6 +100,7 @@ func cloneRepo(url, dir, sshKeyFile string) (*git.Repository, error) {
 		Auth:         publicKey,
 		Progress:     os.Stdout,
 		SingleBranch: true,
+		Depth:        5,
 	})
 	if err != nil {
 		return nil, err
@@ -99,134 +108,59 @@ func cloneRepo(url, dir, sshKeyFile string) (*git.Repository, error) {
 	return repo, nil
 }
 
-func createGoogleapis(url, dir string) (string, error) {
-	/*
-		_, err := cloneRepo(url, dir)
-		if err != nil {
-			return "", err
-		}
-	*/
+func computeSHATwoAgo(dir string) (string, error) {
 	// # Select the sha for HEAD~2
 	// sha=$(git -C googleapis log -3 --format=%H | tail -1)
 	// cmd := exec.Command("git", "-C", dir, "log", "-3", "--format=%H", "|", "tail", "-1")
-	cmd := exec.Command("git", "rev-parse", "--short", "HEAD~2")
-	slog.Info(cmd.String())
-
-	cmd.Dir = dir
-	cmd.Stderr = os.Stderr
-	output, err := cmd.Output()
-	if err != nil {
-		return "", err
-	}
-	return string(output), nil
+	return runCommandWithOutput(dir, "git", "rev-parse", "--short", "HEAD~2")
 }
 
-func createGoogleapisGen(url, dir, sha, garbageFile, bogusFile, helloFile string) error {
-	// # Create a fake googleapis-gen with the sha tag.
-	_, err := cloneRepo(url, dir, sshKeyFile)
-	if err != nil {
-		return err
-	}
+func modifyGoogleapisGen(dir, shaGoogleapis, garbageFile, bogusFile, helloFile string) error {
+	commands := [][]string{
+		// Create a git repository in the googleapis-gen directory, setting the
+		// initial branch name to master
+		{"git", "init", "--initial-branch=master"},
 
-	// Create a git repository in the googleapis-gen directory, setting the
-	// initial branch name to master
-	cmd := exec.Command("git", "init", "--initial-branch=master")
-	slog.Info(cmd.String())
+		// # Hello.txt lives in the root directory and should not be removed.
+		{"echo", "hello", ">", helloFile},
+		// # keepme.java fails to build and therefore should not be removed.
+		{"mkdir", "-p", ">", "googleapis-gen/google/bogus/api"},
+		{"echo", `"import *;"`, ">", bogusFile},
 
-	cmd.Dir = dir
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	if err := cmd.Run(); err != nil {
-		return err
-	}
+		// # garbage.js should be wiped out by newly generated code.
+		{"mkdir", "-p", "googleapis-gen/google/cloud/vision/v1/vision-v1-nodejs"},
+		{"echo", `"garbage"`, ">", garbageFile},
 
-	// # Hello.txt lives in the root directory and should not be removed.
-	cmd = exec.Command("echo", "hello", ">", helloFile)
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
+		{"git", "config", "user.email", "test@example.com"},
+		{"git", "add", "user.name", "Test McTestFace"},
 
-	// # keepme.java fails to build and therefore should not be removed.
-	cmd = exec.Command("mkdir", "-p", ">", "googleapis-gen/google/bogus/api")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
+		{"git", "add", "-A"},
+		{"git", "commit", "-m", "Hello world."},
+		{"git", "tag", fmt.Sprintf("googleapis-%s", shaGoogleapis)},
+		{"git", "checkout", "-b", "other"},
 	}
-	cmd = exec.Command("echo", `"import *;"`, ">", bogusFile)
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-
-	// # garbage.js should be wiped out by newly generated code.
-	cmd = exec.Command("mkdir", "-p", "googleapis-gen/google/cloud/vision/v1/vision-v1-nodejs")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-	cmd = exec.Command("echo", `"garbage"`, ">", garbageFile)
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-
-	cmd = exec.Command("git", "config", "user.email", "test@example.com")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-	cmd = exec.Command("git", "add", "user.name", "Test McTestFace")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-	cmd = exec.Command("git", "add", "-A")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-	cmd = exec.Command("git", "commit", "-m", "Hello world.")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-	cmd = exec.Command("git", "tag", fmt.Sprintf("googleapis-%s", sha))
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-	cmd = exec.Command("git", "checkout", "-b", "other")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
+	for _, c := range commands {
+		if err := runCommand(dir, c[0], c[1:]...); err != nil {
+			return err
+		}
 	}
 	return nil
 }
 
+/*
 func createGoogleapisGenClone(url, dir string) error {
-	// # Clone googleapis-gen so git push pushes back to local copy.
-	_, err := cloneRepo(url, dir, sshKeyFile)
-	if err != nil {
-		return err
+	commands := [][]string{
+		{"git", "config", "user.email", "test@example.com"},
+		{"git", "add", "user.name", "Test McTestFace"},
 	}
-	cmd := exec.Command("git", "config", "user.email", "test@example.com")
-	slog.Info(cmd.String())
-	cmd.Dir = dir
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-
-	cmd = exec.Command("git", "add", "user.name", "Test McTestFace")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
+	for _, c := range commands {
+		if err := runCommand(dir, c[0], c[1:]...); err != nil {
+			return err
+		}
 	}
 	return nil
 }
+*/
 
 func runTest(dir string) error {
 	cmd := exec.Command("bash", "-x", "docker-image/generate-googleapis-gen.sh")
@@ -240,31 +174,27 @@ func runTest(dir string) error {
 	)
 
 	// # Display the state of googleapis-gen
-	cmd = exec.Command("git", "checkout", "master")
-	slog.Info(cmd.String())
-	cmd.Dir = dir
-	if err := cmd.Run(); err != nil {
-		return err
+	commands := [][]string{
+		{"git", "checkout", "master"},
+		{"git", "log", "--name-only"},
 	}
-	cmd = exec.Command("git", "log", "--name-only")
-	slog.Info(cmd.String())
-	if err := cmd.Run(); err != nil {
-		return err
+	for _, c := range commands {
+		if err := runCommand(dir, c[0], c[1:]...); err != nil {
+			return err
+		}
 	}
 	return nil
 }
 
-func confirmOutput(dir, garbageFile, bogusFile, helloFile string) error {
+func confirmOutput(garbageFile, bogusFile, helloFile string) error {
 	// # Confirm that we added at least one commit.
 	// commit_count=$(git -C googleapis-gen log --pretty=%H | wc -l)
 	// if [ $commit_count -lt 2 ] ; then
 	//     echo "ERROR: There should be a new commit in googlapis-gen"
 	//     exit 99
 	// fi
-	cmd := exec.Command("git", "log", "--pretty=%H", "|", "wc", "-l")
-	slog.Info(cmd.String())
-	cmd.Dir = dir
-	s, err := cmd.Output()
+
+	s, err := runCommandWithOutput("git", "log", "--pretty=%H", "|", "wc", "-l")
 	if err != nil {
 		return err
 	}
@@ -306,4 +236,26 @@ func confirmOutput(dir, garbageFile, bogusFile, helloFile string) error {
 		return fmt.Errorf("ERROR: $hello_path should not have been removed")
 	}
 	return nil
+}
+
+func runCommand(dir, c string, args ...string) error {
+	cmd := exec.Command(c, args...)
+	slog.Info(cmd.String())
+	cmd.Dir = dir
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	return cmd.Run()
+}
+
+func runCommandWithOutput(dir, c string, args ...string) (string, error) {
+	cmd := exec.Command(c, args...)
+	slog.Info(cmd.String())
+	cmd.Dir = dir
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	output, err := cmd.Output()
+	if err != nil {
+		return "", err
+	}
+	return string(output), nil
 }
