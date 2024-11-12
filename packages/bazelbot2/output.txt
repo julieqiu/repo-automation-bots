@@ -1,0 +1,1055 @@
+2024/11/11 23:20:01 INFO --------------------------------------------------------------------------------
+2024/11/11 23:20:01 INFO /Users/julieqiu/bin/homebrew/bin/go run ./postprocessor --client-root output/cloud.google.com/go --googleapis-dir /Users/julieqiu/code/googleapis/googleapis --branch julie-pr1 --dirs output/cloud.google.com/go --pr-file prfile.txt
+2024/11/11 23:20:02 client-root set to output/cloud.google.com/go
+2024/11/11 23:20:02 googleapis-dir set to /Users/julieqiu/code/googleapis/googleapis
+2024/11/11 23:20:02 branch set to julie-pr1
+2024/11/11 23:20:02 prFilepath is prfile.txt
+2024/11/11 23:20:02 directories are output/cloud.google.com/go
+2024/11/11 23:20:02 Postprocessor running on [output/cloud.google.com/go]
+2024/11/11 23:20:02 INFO loadConfigs("config.yaml", "OwlBot.yaml")
+2024/11/11 23:20:02 updating gapic manifest
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudtasks/apiv2
+2024/11/11 23:20:02 [output/cloud.google.com/go/cloudtasks/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/assuredworkloads/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/assuredworkloads/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datacatalog/apiv1beta1
+2024/11/11 23:20:02 [output/cloud.google.com/go/datacatalog/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/networkconnectivity/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/networkconnectivity/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/accounts/apiv1beta
+2024/11/11 23:20:02 [output/cloud.google.com/go/shopping/merchant/accounts/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/speech/apiv1p1beta1
+2024/11/11 23:20:02 [output/cloud.google.com/go/speech/apiv1p1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/speech/apiv2
+2024/11/11 23:20:02 [output/cloud.google.com/go/speech/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/vpcaccess/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/vpcaccess/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/workflows/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/workflows/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/billing/budgets/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/billing/budgets/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dialogflow/cx/apiv3beta1
+2024/11/11 23:20:02 [output/cloud.google.com/go/dialogflow/cx/apiv3beta1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/documentai/apiv1beta3
+2024/11/11 23:20:02 [output/cloud.google.com/go/documentai/apiv1beta3] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/edgecontainer/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/edgecontainer/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/firestore/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/firestore/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/longrunning/autogen
+2024/11/11 23:20:02 [output/cloud.google.com/go/longrunning/autogen] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apigeeconnect/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/apigeeconnect/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apphub/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/apphub/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datastream/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/datastream/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/talent/apiv4beta1
+2024/11/11 23:20:02 [output/cloud.google.com/go/talent/apiv4beta1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securitycenter/apiv1beta1
+2024/11/11 23:20:02 [output/cloud.google.com/go/securitycenter/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/streetview/publish/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/streetview/publish/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/appengine/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/appengine/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/batch/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/batch/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/datapolicies/apiv1beta1
+2024/11/11 23:20:02 [output/cloud.google.com/go/bigquery/datapolicies/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/memcache/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/memcache/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/redis/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/redis/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/notebooks/apiv2
+2024/11/11 23:20:02 [output/cloud.google.com/go/notebooks/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/parallelstore/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/parallelstore/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/products/apiv1beta
+2024/11/11 23:20:02 [output/cloud.google.com/go/shopping/merchant/products/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/managedkafka/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/managedkafka/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/optimization/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/optimization/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dataqna/apiv1alpha
+2024/11/11 23:20:02 [output/cloud.google.com/go/dataqna/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/gkebackup/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/gkebackup/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/orgpolicy/apiv2
+2024/11/11 23:20:02 [output/cloud.google.com/go/orgpolicy/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/iam/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/iam/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/spanner/admin/database/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/spanner/admin/database/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/analyticshub/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/bigquery/analyticshub/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/gsuiteaddons/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/gsuiteaddons/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/osconfig/apiv1alpha
+2024/11/11 23:20:02 [output/cloud.google.com/go/osconfig/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/rapidmigrationassessment/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/rapidmigrationassessment/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/storageinsights/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/storageinsights/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/resourcemanager/apiv3
+2024/11/11 23:20:02 [output/cloud.google.com/go/resourcemanager/apiv3] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudtasks/apiv2beta3
+2024/11/11 23:20:02 [output/cloud.google.com/go/cloudtasks/apiv2beta3] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apigeeregistry/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/apigeeregistry/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/certificatemanager/apiv1
+2024/11/11 23:20:02 [output/cloud.google.com/go/certificatemanager/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:02 detecting current module
+2024/11/11 23:20:02 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/memcache/apiv1beta2
+2024/11/11 23:20:02 [output/cloud.google.com/go/memcache/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/notebooks/apiv1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/notebooks/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/video/transcoder/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/video/transcoder/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/recommender/apiv1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/recommender/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/datasources/apiv1beta
+2024/11/11 23:20:03 [output/cloud.google.com/go/shopping/merchant/datasources/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/talent/apiv4
+2024/11/11 23:20:03 [output/cloud.google.com/go/talent/apiv4] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/backupdr/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/backupdr/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datacatalog/lineage/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/datacatalog/lineage/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/language/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/language/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/networkmanagement/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/networkmanagement/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/pubsublite/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/pubsublite/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/monitoring/metricsscope/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/monitoring/metricsscope/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/chat/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/chat/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/recommender/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/recommender/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securitycentermanagement/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/securitycentermanagement/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/telcoautomation/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/telcoautomation/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/artifactregistry/apiv1beta2
+2024/11/11 23:20:03 [output/cloud.google.com/go/artifactregistry/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/iam/credentials/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/iam/credentials/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/addressvalidation/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/maps/addressvalidation/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/asset/apiv1p2beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/asset/apiv1p2beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/kms/inventory/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/kms/inventory/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/lifesciences/apiv2beta
+2024/11/11 23:20:03 [output/cloud.google.com/go/lifesciences/apiv2beta] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/metastore/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/metastore/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/networkservices/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/networkservices/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/areainsights/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/maps/areainsights/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/solar/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/maps/solar/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigtable/admin/apiv2
+2024/11/11 23:20:03 [output/cloud.google.com/go/bigtable/admin/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/iot/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/iot/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/retail/apiv2alpha
+2024/11/11 23:20:03 [output/cloud.google.com/go/retail/apiv2alpha] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/video/livestream/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/video/livestream/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/vision/apiv1p1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/vision/apiv1p1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 ERROR docURL("output/cloud.google.com/go", "cloud.google.com/go/vision/v2/apiv1p1beta1", "/vision/apiv1p1beta1"): CurrentMod("output/cloud.google.com/go/vision/apiv1p1beta1"): chdir output/cloud.google.com/go/vision/apiv1p1beta1: no such file or directory
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/alloydb/connectors/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/alloydb/connectors/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudbuild/apiv2
+2024/11/11 23:20:03 [output/cloud.google.com/go/cloudbuild/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/assuredworkloads/apiv1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/assuredworkloads/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/commerce/consumer/procurement/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/commerce/consumer/procurement/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securityposture/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/securityposture/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/analytics/admin/apiv1alpha
+2024/11/11 23:20:03 [output/cloud.google.com/go/analytics/admin/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datacatalog/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/datacatalog/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/essentialcontacts/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/essentialcontacts/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/conversions/apiv1beta
+2024/11/11 23:20:03 [output/cloud.google.com/go/shopping/merchant/conversions/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/visionai/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/visionai/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/aiplatform/apiv1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/aiplatform/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/orchestration/airflow/service/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/orchestration/airflow/service/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/policytroubleshooter/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/policytroubleshooter/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/videointelligence/apiv1beta2
+2024/11/11 23:20:03 [output/cloud.google.com/go/videointelligence/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/videointelligence/apiv1p3beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/videointelligence/apiv1p3beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/websecurityscanner/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/websecurityscanner/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/container/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/container/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/beyondcorp/clientgateways/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/beyondcorp/clientgateways/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/filestore/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/filestore/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/security/publicca/apiv1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/security/publicca/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/servicedirectory/apiv1
+2024/11/11 23:20:03 [output/cloud.google.com/go/servicedirectory/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/servicedirectory/apiv1beta1
+2024/11/11 23:20:03 [output/cloud.google.com/go/servicedirectory/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/routing/apiv2
+2024/11/11 23:20:03 [output/cloud.google.com/go/maps/routing/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:03 detecting current module
+2024/11/11 23:20:03 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/workflows/executions/apiv1beta
+2024/11/11 23:20:03 [output/cloud.google.com/go/workflows/executions/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/spanner/admin/instance/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/spanner/admin/instance/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudprofiler/apiv2
+2024/11/11 23:20:04 [output/cloud.google.com/go/cloudprofiler/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/networkconnectivity/apiv1alpha1
+2024/11/11 23:20:04 [output/cloud.google.com/go/networkconnectivity/apiv1alpha1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/osconfig/agentendpoint/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/osconfig/agentendpoint/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/servicemanagement/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/servicemanagement/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/vision/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/vision/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 ERROR docURL("output/cloud.google.com/go", "cloud.google.com/go/vision/v2/apiv1", "/vision/apiv1"): CurrentMod("output/cloud.google.com/go/vision/apiv1"): chdir output/cloud.google.com/go/vision/apiv1: no such file or directory
+2024/11/11 23:20:04 ERROR releaseLevel("output/cloud.google.com/go", ""): open output/cloud.google.com/go/vision/apiv1/doc.go: no such file or directory
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/baremetalsolution/apiv2
+2024/11/11 23:20:04 [output/cloud.google.com/go/baremetalsolution/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/binaryauthorization/apiv1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/binaryauthorization/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/oslogin/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/oslogin/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/pubsub/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/pubsub/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/billing/budgets/apiv1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/billing/budgets/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/documentai/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/documentai/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/language/apiv1beta2
+2024/11/11 23:20:04 [output/cloud.google.com/go/language/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/aiplatform/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/aiplatform/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/beyondcorp/appconnectors/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/beyondcorp/appconnectors/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datafusion/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/datafusion/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/translate/apiv3
+2024/11/11 23:20:04 [output/cloud.google.com/go/translate/apiv3] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/vmwareengine/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/vmwareengine/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/resourcesettings/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/resourcesettings/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/scheduler/apiv1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/scheduler/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/notifications/apiv1beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/shopping/merchant/notifications/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/alloydb/connectors/apiv1alpha
+2024/11/11 23:20:04 [output/cloud.google.com/go/alloydb/connectors/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/gkeconnect/gateway/apiv1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/gkeconnect/gateway/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/migrationcenter/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/migrationcenter/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securitycenter/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/securitycenter/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/ai/generativelanguage/apiv1beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/ai/generativelanguage/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dlp/apiv2
+2024/11/11 23:20:04 [output/cloud.google.com/go/dlp/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/area120/tables/apiv1alpha1
+2024/11/11 23:20:04 [output/cloud.google.com/go/area120/tables/apiv1alpha1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/alloydb/connectors/apiv1beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/alloydb/connectors/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/storage/apiv1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/bigquery/storage/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/trace/apiv2
+2024/11/11 23:20:04 [output/cloud.google.com/go/trace/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/beyondcorp/appconnections/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/beyondcorp/appconnections/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudquotas/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/cloudquotas/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securitycenter/apiv1p1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/securitycenter/apiv1p1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/speech/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/speech/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apikeys/apiv2
+2024/11/11 23:20:04 [output/cloud.google.com/go/apikeys/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/asset/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/asset/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/clouddms/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/clouddms/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/functions/apiv2beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/functions/apiv2beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/advisorynotifications/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/advisorynotifications/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/scheduler/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/scheduler/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securesourcemanager/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/securesourcemanager/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/reports/apiv1beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/shopping/merchant/reports/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/spanner/executor/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/spanner/executor/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/biglake/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/bigquery/biglake/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/gkehub/apiv1beta1
+2024/11/11 23:20:04 [output/cloud.google.com/go/gkehub/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/oslogin/apiv1beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/oslogin/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/alloydb/apiv1alpha
+2024/11/11 23:20:04 [output/cloud.google.com/go/alloydb/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/redis/cluster/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/redis/cluster/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apigateway/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/apigateway/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/storage/apiv1alpha
+2024/11/11 23:20:04 [output/cloud.google.com/go/bigquery/storage/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/datapolicies/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/bigquery/datapolicies/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/storage/apiv1
+2024/11/11 23:20:04 [output/cloud.google.com/go/bigquery/storage/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:04 detecting current module
+2024/11/11 23:20:04 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/osconfig/agentendpoint/apiv1beta
+2024/11/11 23:20:04 [output/cloud.google.com/go/osconfig/agentendpoint/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/retail/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/retail/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/alloydb/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/alloydb/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/oracledatabase/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/oracledatabase/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/routeoptimization/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/maps/routeoptimization/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/spanner/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/spanner/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/iam/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/iam/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/fleetengine/delivery/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/maps/fleetengine/delivery/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/dataexchange/apiv1beta1
+2024/11/11 23:20:05 [output/cloud.google.com/go/bigquery/dataexchange/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigtable/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/bigtable/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/edgenetwork/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/edgenetwork/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/gkemulticloud/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/gkemulticloud/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/servicehealth/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/servicehealth/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/compute/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/compute/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/storagetransfer/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/storagetransfer/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/biglake/apiv1alpha1
+2024/11/11 23:20:05 [output/cloud.google.com/go/bigquery/biglake/apiv1alpha1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datastream/apiv1alpha1
+2024/11/11 23:20:05 [output/cloud.google.com/go/datastream/apiv1alpha1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/policysimulator/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/policysimulator/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/privilegedaccessmanager/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/privilegedaccessmanager/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/css/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/shopping/css/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/support/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/support/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/workstations/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/workstations/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/ai/generativelanguage/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/ai/generativelanguage/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/accessapproval/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/accessapproval/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dataplex/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/dataplex/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/language/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/language/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/notebooks/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/notebooks/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/automl/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/automl/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/billing/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/billing/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/functions/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/functions/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securitycenter/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/securitycenter/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/monitoring/dashboard/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/monitoring/dashboard/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/firestore/apiv1/admin
+2024/11/11 23:20:05 [output/cloud.google.com/go/firestore/apiv1/admin] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/binaryauthorization/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/binaryauthorization/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/config/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/config/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dataform/apiv1beta1
+2024/11/11 23:20:05 [output/cloud.google.com/go/dataform/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/inventories/apiv1beta
+2024/11/11 23:20:05 [output/cloud.google.com/go/shopping/merchant/inventories/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/tpu/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/tpu/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/monitoring/apiv3/v2
+2024/11/11 23:20:05 [output/cloud.google.com/go/monitoring/apiv3/v2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apps/events/subscriptions/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/apps/events/subscriptions/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/deploy/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/deploy/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/ids/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/ids/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/workstations/apiv1beta
+2024/11/11 23:20:05 [output/cloud.google.com/go/workstations/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/fleetengine/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/maps/fleetengine/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/identitytoolkit/apiv2
+2024/11/11 23:20:05 [output/cloud.google.com/go/identitytoolkit/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/recommendationengine/apiv1beta1
+2024/11/11 23:20:05 [output/cloud.google.com/go/recommendationengine/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datastore/admin/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/datastore/admin/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/connection/apiv1beta1
+2024/11/11 23:20:05 [output/cloud.google.com/go/bigquery/connection/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:05 detecting current module
+2024/11/11 23:20:05 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/functions/apiv1
+2024/11/11 23:20:05 [output/cloud.google.com/go/functions/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/privatecatalog/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/privatecatalog/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/secretmanager/apiv1beta2
+2024/11/11 23:20:06 [output/cloud.google.com/go/secretmanager/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/webrisk/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/webrisk/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/beyondcorp/appgateways/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/beyondcorp/appgateways/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/datatransfer/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/bigquery/datatransfer/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/reservation/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/bigquery/reservation/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/workflows/apiv1beta
+2024/11/11 23:20:06 [output/cloud.google.com/go/workflows/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/kms/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/kms/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/recaptchaenterprise/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/recaptchaenterprise/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 ERROR docURL("output/cloud.google.com/go", "cloud.google.com/go/recaptchaenterprise/v2/apiv1beta1", "/recaptchaenterprise/apiv1beta1"): CurrentMod("output/cloud.google.com/go/recaptchaenterprise/apiv1beta1"): chdir output/cloud.google.com/go/recaptchaenterprise/apiv1beta1: no such file or directory
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/run/apiv2
+2024/11/11 23:20:06 [output/cloud.google.com/go/run/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/promotions/apiv1beta
+2024/11/11 23:20:06 [output/cloud.google.com/go/shopping/merchant/promotions/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/webrisk/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/webrisk/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/alloydb/apiv1beta
+2024/11/11 23:20:06 [output/cloud.google.com/go/alloydb/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/domains/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/domains/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/containeranalysis/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/containeranalysis/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/parallelstore/apiv1beta
+2024/11/11 23:20:06 [output/cloud.google.com/go/parallelstore/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/serviceusage/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/serviceusage/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/quota/apiv1beta
+2024/11/11 23:20:06 [output/cloud.google.com/go/shopping/merchant/quota/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/asset/apiv1p5beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/asset/apiv1p5beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/connection/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/bigquery/connection/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudcontrolspartner/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/cloudcontrolspartner/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/discoveryengine/apiv1beta
+2024/11/11 23:20:06 [output/cloud.google.com/go/discoveryengine/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/eventarc/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/eventarc/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/vmmigration/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/vmmigration/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/artifactregistry/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/artifactregistry/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/confidentialcomputing/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/confidentialcomputing/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/channel/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/channel/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/iap/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/iap/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/metastore/apiv1alpha
+2024/11/11 23:20:06 [output/cloud.google.com/go/metastore/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/networksecurity/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/networksecurity/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/phishingprotection/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/phishingprotection/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/security/publicca/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/security/publicca/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/servicecontrol/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/servicecontrol/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/maps/places/apiv1
+2024/11/11 23:20:06 [output/cloud.google.com/go/maps/places/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apps/meet/apiv2
+2024/11/11 23:20:06 [output/cloud.google.com/go/apps/meet/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/automl/apiv1beta1
+2024/11/11 23:20:06 [output/cloud.google.com/go/automl/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:06 detecting current module
+2024/11/11 23:20:06 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/storage/apiv1beta2
+2024/11/11 23:20:06 [output/cloud.google.com/go/bigquery/storage/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/discoveryengine/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/discoveryengine/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/retail/apiv2beta
+2024/11/11 23:20:07 [output/cloud.google.com/go/retail/apiv2beta] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/contactcenterinsights/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/contactcenterinsights/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/securitycenter/settings/apiv1beta1
+2024/11/11 23:20:07 [output/cloud.google.com/go/securitycenter/settings/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/texttospeech/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/texttospeech/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dataflow/apiv1beta3
+2024/11/11 23:20:07 [output/cloud.google.com/go/dataflow/apiv1beta3] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/video/stitcher/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/video/stitcher/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/discoveryengine/apiv1alpha
+2024/11/11 23:20:07 [output/cloud.google.com/go/discoveryengine/apiv1alpha] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/mediatranslation/apiv1beta1
+2024/11/11 23:20:07 [output/cloud.google.com/go/mediatranslation/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/redis/apiv1beta1
+2024/11/11 23:20:07 [output/cloud.google.com/go/redis/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudtasks/apiv2beta2
+2024/11/11 23:20:07 [output/cloud.google.com/go/cloudtasks/apiv2beta2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/storage/internal/apiv2
+2024/11/11 23:20:07 [output/cloud.google.com/go/storage/internal/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/migration/apiv2alpha
+2024/11/11 23:20:07 [output/cloud.google.com/go/bigquery/migration/apiv2alpha] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/recaptchaenterprise/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/recaptchaenterprise/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 ERROR docURL("output/cloud.google.com/go", "cloud.google.com/go/recaptchaenterprise/v2/apiv1", "/recaptchaenterprise/apiv1"): CurrentMod("output/cloud.google.com/go/recaptchaenterprise/apiv1"): chdir output/cloud.google.com/go/recaptchaenterprise/apiv1: no such file or directory
+2024/11/11 23:20:07 ERROR releaseLevel("output/cloud.google.com/go", ""): open output/cloud.google.com/go/recaptchaenterprise/apiv1/doc.go: no such file or directory
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shopping/merchant/lfp/apiv1beta
+2024/11/11 23:20:07 [output/cloud.google.com/go/shopping/merchant/lfp/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/bigquery/migration/apiv2
+2024/11/11 23:20:07 [output/cloud.google.com/go/bigquery/migration/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dataproc/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/dataproc/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 ERROR docURL("output/cloud.google.com/go", "cloud.google.com/go/dataproc/v2/apiv1", "/dataproc/apiv1"): CurrentMod("output/cloud.google.com/go/dataproc/apiv1"): chdir output/cloud.google.com/go/dataproc/apiv1: no such file or directory
+2024/11/11 23:20:07 ERROR releaseLevel("output/cloud.google.com/go", ""): open output/cloud.google.com/go/dataproc/apiv1/doc.go: no such file or directory
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dialogflow/apiv2beta1
+2024/11/11 23:20:07 [output/cloud.google.com/go/dialogflow/apiv2beta1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/netapp/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/netapp/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/osconfig/apiv1beta
+2024/11/11 23:20:07 [output/cloud.google.com/go/osconfig/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apihub/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/apihub/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/security/privateca/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/security/privateca/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/trace/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/trace/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/workflows/executions/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/workflows/executions/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudcontrolspartner/apiv1beta
+2024/11/11 23:20:07 [output/cloud.google.com/go/cloudcontrolspartner/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dialogflow/apiv2
+2024/11/11 23:20:07 [output/cloud.google.com/go/dialogflow/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go
+2024/11/11 23:20:07 [output/cloud.google.com/go] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datastore/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/datastore/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/shell/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/shell/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go
+2024/11/11 23:20:07 [output/cloud.google.com/go] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/ai/generativelanguage/apiv1beta2
+2024/11/11 23:20:07 [output/cloud.google.com/go/ai/generativelanguage/apiv1beta2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dataform/apiv1alpha2
+2024/11/11 23:20:07 [output/cloud.google.com/go/dataform/apiv1alpha2] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/dialogflow/cx/apiv3
+2024/11/11 23:20:07 [output/cloud.google.com/go/dialogflow/cx/apiv3] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/gkeconnect/gateway/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/gkeconnect/gateway/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/managedidentities/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/managedidentities/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/developerconnect/apiv1
+2024/11/11 23:20:07 [output/cloud.google.com/go/developerconnect/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/policytroubleshooter/iam/apiv3
+2024/11/11 23:20:07 [output/cloud.google.com/go/policytroubleshooter/iam/apiv3] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/apps/meet/apiv2beta
+2024/11/11 23:20:07 [output/cloud.google.com/go/apps/meet/apiv2beta] >>>> go list -m <<<<
+2024/11/11 23:20:07 detecting current module
+2024/11/11 23:20:07 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/resourcemanager/apiv2
+2024/11/11 23:20:07 [output/cloud.google.com/go/resourcemanager/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/containeranalysis/apiv1beta1
+2024/11/11 23:20:08 [output/cloud.google.com/go/containeranalysis/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/beyondcorp/clientconnectorservices/apiv1
+2024/11/11 23:20:08 [output/cloud.google.com/go/beyondcorp/clientconnectorservices/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/datalabeling/apiv1beta1
+2024/11/11 23:20:08 [output/cloud.google.com/go/datalabeling/apiv1beta1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/metastore/apiv1beta
+2024/11/11 23:20:08 [output/cloud.google.com/go/metastore/apiv1beta] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/accesscontextmanager/apiv1
+2024/11/11 23:20:08 [output/cloud.google.com/go/accesscontextmanager/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/eventarc/publishing/apiv1
+2024/11/11 23:20:08 [output/cloud.google.com/go/eventarc/publishing/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/secretmanager/apiv1
+2024/11/11 23:20:08 [output/cloud.google.com/go/secretmanager/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/cloudbuild/apiv1/v2
+2024/11/11 23:20:08 [output/cloud.google.com/go/cloudbuild/apiv1/v2] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/confidentialcomputing/apiv1alpha1
+2024/11/11 23:20:08 [output/cloud.google.com/go/confidentialcomputing/apiv1alpha1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/logging/apiv2
+2024/11/11 23:20:08 [output/cloud.google.com/go/logging/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/osconfig/apiv1
+2024/11/11 23:20:08 [output/cloud.google.com/go/osconfig/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/videointelligence/apiv1
+2024/11/11 23:20:08 [output/cloud.google.com/go/videointelligence/apiv1] >>>> go list -m <<<<
+2024/11/11 23:20:08 detecting current module
+2024/11/11 23:20:08 INFO /Users/julieqiu/bin/homebrew/bin/go list -m | Dir = output/cloud.google.com/go/storage/control/apiv2
+2024/11/11 23:20:08 [output/cloud.google.com/go/storage/control/apiv2] >>>> go list -m <<<<
+2024/11/11 23:20:08 checking for new modules and clients
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/accessapproval
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/accesscontextmanager
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/ai
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/aiplatform
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/advisorynotifications
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/alloydb
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/analytics
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apigateway
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apigeeconnect
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apigeeregistry
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apihub
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apikeys
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/appengine
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apphub
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/apps
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/area120
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/artifactregistry
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/asset
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/assuredworkloads
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/automl
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/backupdr
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/baremetalsolution
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/batch
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/beyondcorp
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/bigquery
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/bigtable
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/billing
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/binaryauthorization
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/certificatemanager
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/channel
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/chat
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/cloudbuild
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/cloudcontrolspartner
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/clouddms
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/cloudprofiler
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/cloudquotas
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/cloudtasks
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/commerce
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/compute
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/confidentialcomputing
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/config
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/contactcenterinsights
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/container
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/containeranalysis
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/datacatalog
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dataflow
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dataform
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/datafusion
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/datalabeling
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dataplex
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dataproc
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dataqna
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/datastore
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/datastream
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/deploy
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/developerconnect
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dialogflow
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/discoveryengine
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/dlp
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/documentai
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/domains
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/edgecontainer
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/edgenetwork
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/errorreporting
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/essentialcontacts
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/eventarc
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/filestore
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/firestore
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/functions
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/gkebackup
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/gkeconnect
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/gkehub
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/gkemulticloud
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/grafeas
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/gsuiteaddons
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/iam
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/iap
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/identitytoolkit
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/ids
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/iot
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/kms
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/language
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/lifesciences
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/logging
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/longrunning
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/managedidentities
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/managedkafka
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/maps
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/mediatranslation
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/memcache
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/metastore
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/migrationcenter
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/monitoring
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/netapp
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/networkconnectivity
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/networkmanagement
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/networksecurity
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/networkservices
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/notebooks
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/optimization
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/oracledatabase
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/orchestration
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/orgpolicy
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/osconfig
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/oslogin
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/parallelstore
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/phishingprotection
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/policysimulator
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/policytroubleshooter
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/privatecatalog
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/privilegedaccessmanager
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/profiler
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/pubsub
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/pubsublite
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/rapidmigrationassessment
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/recaptchaenterprise
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/recommendationengine
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/recommender
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/redis
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/resourcemanager
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/resourcesettings
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/retail
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/run
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/scheduler
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/secretmanager
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/securesourcemanager
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/security
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/securitycenter
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/securitycentermanagement
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/securityposture
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/servicecontrol
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/servicedirectory
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/servicehealth
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/servicemanagement
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/serviceusage
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/shell
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/shopping
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/spanner
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/speech
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/storage
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/storageinsights
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/storagetransfer
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/streetview
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/support
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/talent
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/telcoautomation
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/texttospeech
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/tpu
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/trace
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/translate
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/video
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/videointelligence
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/vision
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/visionai
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/vmmigration
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/vmwareengine
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/vpcaccess
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/webrisk
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/websecurityscanner
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/workflows
+2024/11/11 23:20:08 INFO InitializeNewModules: cloud.google.com/go/workstations
+2024/11/11 23:20:08 updating snippets metadata
+2024/11/11 23:20:08 Completed successfully.
