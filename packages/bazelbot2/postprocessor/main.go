@@ -208,6 +208,12 @@ func (p *postProcessor) run(ctx context.Context) (err error) {
 	return nil
 }
 
+var skip = map[string]bool{
+	"cloud.google.com/go/profiler": true,
+	"cloud.google.com/go/grafeas":  true,
+	"cloud.google.com/go/vision":   true,
+}
+
 // InitializeNewModule detects new modules and clients and generates the required minimum files
 // For modules, the minimum required files are internal/version.go, README.md, CHANGES.md, and go.mod
 // For clients, the minimum required files are a version.go file
@@ -222,6 +228,9 @@ func (p *postProcessor) InitializeNewModules(manifest map[string]ManifestEntry) 
 		modulePath := filepath.Join(p.googleCloudDir, moduleName)
 		importPath := filepath.Join("cloud.google.com/go", moduleName)
 		slog.Info(fmt.Sprintf("InitializeNewModules: %s", importPath))
+		if skip[importPath] {
+			continue
+		}
 
 		pathToModVersionFile := filepath.Join(modulePath, "internal/version.go")
 		// Check if <module>/internal/version.go file exists

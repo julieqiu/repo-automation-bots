@@ -20,6 +20,7 @@ import (
 	"fmt"
 	"io/fs"
 	"log"
+	"log/slog"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -127,8 +128,9 @@ func CurrentMod(dir string) (_ string, err error) {
 	c := execv.Command("go", "list", "-m")
 	c.Stderr = os.Stderr
 	c.Dir = dir
-	c.Env = []string{"GOWORK=off", "GOMODCACHE=/tmp/modcache"}
+	c.Env = []string{"GOWORK=off", "GOPATH=/Users/julieqiu/go"}
 	var out []byte
+	slog.Info(c.String() + " | Dir = " + c.Dir)
 	if out, err = c.Output(); err != nil {
 		return "", err
 	}

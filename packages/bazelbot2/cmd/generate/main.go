@@ -26,7 +26,7 @@ import (
 
 var (
 	repo      = flag.String("repo", "", "")
-	outputDir = flag.String("outputp", ".", "")
+	outputDir = flag.String("output", "output", "")
 )
 
 func main() {
@@ -37,27 +37,25 @@ func main() {
 }
 
 func run(repoDir, outputDir string) error {
-	/*
-		targets, err := queryTargets(repoDir)
-		if err != nil {
-			return err
-		}
-		if err := fetchTargets(repoDir, targets); err != nil {
-			return err
-		}
+	targets, err := queryTargets(repoDir)
+	if err != nil {
+		return err
+	}
+	if err := fetchTargets(repoDir, targets); err != nil {
+		return err
+	}
 
-		for _, target := range targets {
-			if strings.Contains(target, "csharp") || strings.Contains(target, "ruby") {
-				continue
-			}
-			if err := bazelBuild(repoDir, target); err != nil {
-				return err
-			}
-			if err := untar(repoDir, target); err != nil {
-				return err
-			}
+	for _, target := range targets {
+		if strings.Contains(target, "csharp") || strings.Contains(target, "ruby") {
+			continue
 		}
-	*/
+		if err := bazelBuild(repoDir, target); err != nil {
+			return err
+		}
+		if err := untar(repoDir, target); err != nil {
+			return err
+		}
+	}
 	if err := runGoPostprocessor(repoDir, outputDir); err != nil {
 		return err
 	}
@@ -75,6 +73,9 @@ func queryTargets(repoDir string) ([]string, error) {
 		return nil, err
 	}
 	targets := strings.Fields(string(output))
+	for _, t := range targets {
+		slog.Info(t)
+	}
 	return targets, nil
 }
 
@@ -98,11 +99,14 @@ func untar(repoDir, target string) error {
 }
 
 func runGoPostprocessor(repoDir, outputDir string) error {
+	if _, err := os.Create("output/cloud.google.com/go/internal/.repo-metadata-full.json"); err != nil {
+		return err
+	}
 	return runCommand(".", "go", "run", "./postprocessor",
-		"--client-root", fmt.Sprintf("cloud.google.com/go"),
+		"--client-root", fmt.Sprintf("%s/cloud.google.com/go", outputDir),
 		"--googleapis-dir", repoDir,
 		"--branch", "julie-pr1",
-		"--dirs", fmt.Sprintf("cloud.google.com/go"),
+		"--dirs", fmt.Sprintf("%s/cloud.google.com/go", outputDir),
 		"--pr-file", "prfile.txt",
 	)
 }
