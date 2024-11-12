@@ -19,6 +19,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"log/slog"
 	"os"
 	"path/filepath"
 	"strings"
@@ -87,14 +88,15 @@ func (p *postProcessor) Manifest() (_ map[string]ManifestEntry, err error) {
 		if err := yaml.NewDecoder(yamlFile).Decode(&yamlConfig); err != nil {
 			return nil, fmt.Errorf("decode: %v", err)
 		}
-		docURL, err := docURL(p.googleCloudDir, li.ImportPath, li.RelPath)
+		var dURL, rLevel string
+		dURL, err = docURL(p.googleCloudDir, li.ImportPath, li.RelPath)
 		if err != nil {
-			return nil, fmt.Errorf("unable to build docs URL: %v", err)
+			slog.Error(err.Error())
 		}
 
-		releaseLevel, err := releaseLevel(p.googleCloudDir, li)
+		rLevel, err = releaseLevel(p.googleCloudDir, li)
 		if err != nil {
-			return nil, fmt.Errorf("unable to calculate release level for %v: %v", inputDir, err)
+			slog.Error(err.Error())
 		}
 
 		apiShortname, err := apiShortname(yamlConfig.NameFull)
@@ -108,8 +110,8 @@ func (p *postProcessor) Manifest() (_ map[string]ManifestEntry, err error) {
 			Description:         yamlConfig.Title,
 			Language:            "go",
 			ClientLibraryType:   "generated",
-			ClientDocumentation: docURL,
-			ReleaseLevel:        releaseLevel,
+			ClientDocumentation: dURL,
+			ReleaseLevel:        rLevel,
 			LibraryType:         gapicAutoLibraryType,
 		}
 		entries[li.ImportPath] = entry
@@ -142,7 +144,8 @@ func docURL(cloudDir, importPath, relPath string) (_ string, err error) {
 	return "https://cloud.google.com/go/docs/reference/" + mod + "/latest/" + pkgPath, nil
 }
 
-func releaseLevel(cloudDir string, li *libraryInfo) (string, error) {
+func releaseLevel(cloudDir string, li *libraryInfo) (_ string, err error) {
+	defer derrors.Wrap(&err, "releaseLevel(%q, %q)", cloudDir, li.ReleaseLevel)
 	if li.ReleaseLevel != "" {
 		return li.ReleaseLevel, nil
 	}

@@ -37,25 +37,27 @@ func main() {
 }
 
 func run(repoDir, outputDir string) error {
-	targets, err := queryTargets(repoDir)
-	if err != nil {
-		return err
-	}
-	if err := fetchTargets(repoDir, targets); err != nil {
-		return err
-	}
+	/*
+		targets, err := queryTargets(repoDir)
+		if err != nil {
+			return err
+		}
+		if err := fetchTargets(repoDir, targets); err != nil {
+			return err
+		}
 
-	for _, target := range targets {
-		if strings.Contains(target, "csharp") || strings.Contains(target, "ruby") {
-			continue
+		for _, target := range targets {
+			if strings.Contains(target, "csharp") || strings.Contains(target, "ruby") {
+				continue
+			}
+			if err := bazelBuild(repoDir, target); err != nil {
+				return err
+			}
+			if err := untar(repoDir, target); err != nil {
+				return err
+			}
 		}
-		if err := bazelBuild(repoDir, target); err != nil {
-			return err
-		}
-		if err := untar(repoDir, target); err != nil {
-			return err
-		}
-	}
+	*/
 	if err := runGoPostprocessor(repoDir, outputDir); err != nil {
 		return err
 	}
