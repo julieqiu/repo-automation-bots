@@ -1,0 +1,244 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/api/homegraph/v1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.home.graph.v1",
+        "version": "v1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "homegraph_v1_generated_HomeGraphApiService_DeleteAgentUser_sync",
+      "title": "homegraph DeleteAgentUser Sample",
+      "description": "DeleteAgentUser unlinks the given third-party user from your smart home Action.\nAll data related to this user will be deleted.\n\nFor more details on how users link their accounts, see\n[fulfillment and\nauthentication](https: //developers.home.google.com/cloud-to-cloud/primer/fulfillment).\n\nThe third-party user's identity is passed in via the `agent_user_id`\n(see\n[DeleteAgentUserRequest][google.home.graph.v1.DeleteAgentUserRequest]).\nThis request must be authorized using service account credentials from your\nActions console project.",
+      "file": "HomeGraphApiClient/DeleteAgentUser/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "DeleteAgentUser",
+        "fullName": "google.home.graph.v1.HomeGraphApiClient.DeleteAgentUser",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "graphpb.DeleteAgentUserRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "client": {
+          "shortName": "HomeGraphApiClient",
+          "fullName": "google.home.graph.v1.HomeGraphApiClient"
+        },
+        "method": {
+          "shortName": "DeleteAgentUser",
+          "fullName": "google.home.graph.v1.HomeGraphApiService.DeleteAgentUser",
+          "service": {
+            "shortName": "HomeGraphApiService",
+            "fullName": "google.home.graph.v1.HomeGraphApiService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 51,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "homegraph_v1_generated_HomeGraphApiService_Query_sync",
+      "title": "homegraph Query Sample",
+      "description": "Query gets the current states in Home Graph for the given set of the third-party\nuser's devices.\n\nThe third-party user's identity is passed in via the `agent_user_id`\n(see [QueryRequest][google.home.graph.v1.QueryRequest]).\nThis request must be authorized using service account credentials from your\nActions console project.",
+      "file": "HomeGraphApiClient/Query/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "Query",
+        "fullName": "google.home.graph.v1.HomeGraphApiClient.Query",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "graphpb.QueryRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*graphpb.QueryResponse",
+        "client": {
+          "shortName": "HomeGraphApiClient",
+          "fullName": "google.home.graph.v1.HomeGraphApiClient"
+        },
+        "method": {
+          "shortName": "Query",
+          "fullName": "google.home.graph.v1.HomeGraphApiService.Query",
+          "service": {
+            "shortName": "HomeGraphApiService",
+            "fullName": "google.home.graph.v1.HomeGraphApiService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "homegraph_v1_generated_HomeGraphApiService_ReportStateAndNotification_sync",
+      "title": "homegraph ReportStateAndNotification Sample",
+      "description": "ReportStateAndNotification reports device state and optionally sends device notifications.\nCalled by your smart home Action when the state of a third-party device\nchanges or you need to send a notification about the device.\nSee [Implement Report\nState](https: //developers.home.google.com/cloud-to-cloud/integration/report-state)\nfor more information.\n\nThis method updates the device state according to its declared\n[traits](https: //developers.home.google.com/cloud-to-cloud/primer/device-types-and-traits).\nPublishing a new state value outside of these traits will result in an\n`INVALID_ARGUMENT` error response.\n\nThe third-party user's identity is passed in via the `agent_user_id`\n(see\n[ReportStateAndNotificationRequest][google.home.graph.v1.ReportStateAndNotificationRequest]).\nThis request must be authorized using service account credentials from your\nActions console project.",
+      "file": "HomeGraphApiClient/ReportStateAndNotification/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ReportStateAndNotification",
+        "fullName": "google.home.graph.v1.HomeGraphApiClient.ReportStateAndNotification",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "graphpb.ReportStateAndNotificationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*graphpb.ReportStateAndNotificationResponse",
+        "client": {
+          "shortName": "HomeGraphApiClient",
+          "fullName": "google.home.graph.v1.HomeGraphApiClient"
+        },
+        "method": {
+          "shortName": "ReportStateAndNotification",
+          "fullName": "google.home.graph.v1.HomeGraphApiService.ReportStateAndNotification",
+          "service": {
+            "shortName": "HomeGraphApiService",
+            "fullName": "google.home.graph.v1.HomeGraphApiService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "homegraph_v1_generated_HomeGraphApiService_RequestSyncDevices_sync",
+      "title": "homegraph RequestSyncDevices Sample",
+      "description": "RequestSyncDevices requests Google to send an `action.devices.SYNC`\n[intent](https: //developers.home.google.com/cloud-to-cloud/intents/sync)\nto your smart home Action to update device metadata for the given user.\n\n\nThe third-party user's identity is passed via the `agent_user_id`\n(see\n[RequestSyncDevicesRequest][google.home.graph.v1.RequestSyncDevicesRequest]).\nThis request must be authorized using service account credentials from your\nActions console project.",
+      "file": "HomeGraphApiClient/RequestSyncDevices/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "RequestSyncDevices",
+        "fullName": "google.home.graph.v1.HomeGraphApiClient.RequestSyncDevices",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "graphpb.RequestSyncDevicesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*graphpb.RequestSyncDevicesResponse",
+        "client": {
+          "shortName": "HomeGraphApiClient",
+          "fullName": "google.home.graph.v1.HomeGraphApiClient"
+        },
+        "method": {
+          "shortName": "RequestSyncDevices",
+          "fullName": "google.home.graph.v1.HomeGraphApiService.RequestSyncDevices",
+          "service": {
+            "shortName": "HomeGraphApiService",
+            "fullName": "google.home.graph.v1.HomeGraphApiService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "homegraph_v1_generated_HomeGraphApiService_Sync_sync",
+      "title": "homegraph Sync Sample",
+      "description": "Sync gets all the devices associated with the given third-party user.\n\nThe third-party user's identity is passed in via the `agent_user_id`\n(see [SyncRequest][google.home.graph.v1.SyncRequest]).\nThis request must be authorized using service account credentials from your\nActions console project.",
+      "file": "HomeGraphApiClient/Sync/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "Sync",
+        "fullName": "google.home.graph.v1.HomeGraphApiClient.Sync",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "graphpb.SyncRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*graphpb.SyncResponse",
+        "client": {
+          "shortName": "HomeGraphApiClient",
+          "fullName": "google.home.graph.v1.HomeGraphApiClient"
+        },
+        "method": {
+          "shortName": "Sync",
+          "fullName": "google.home.graph.v1.HomeGraphApiService.Sync",
+          "service": {
+            "shortName": "HomeGraphApiService",
+            "fullName": "google.home.graph.v1.HomeGraphApiService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

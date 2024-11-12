@@ -1,0 +1,61 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/chromeos/uidetection/v1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.chromeos.uidetection.v1",
+        "version": "v1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "chromeosuidetection_v1_generated_UiDetectionService_ExecuteDetection_sync",
+      "title": "chromeosuidetection ExecuteDetection Sample",
+      "description": "ExecuteDetection runs the detection.",
+      "file": "Client/ExecuteDetection/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ExecuteDetection",
+        "fullName": "google.chromeos.uidetection.v1.Client.ExecuteDetection",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "uidetectionpb.UiDetectionRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*uidetectionpb.UiDetectionResponse",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.chromeos.uidetection.v1.Client"
+        },
+        "method": {
+          "shortName": "ExecuteDetection",
+          "fullName": "google.chromeos.uidetection.v1.UiDetectionService.ExecuteDetection",
+          "service": {
+            "shortName": "UiDetectionService",
+            "fullName": "google.chromeos.uidetection.v1.UiDetectionService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

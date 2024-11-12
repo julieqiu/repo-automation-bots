@@ -1,0 +1,83 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods.",
+  "language": "go",
+  "protoPackage": "google.chromeos.moblab.v1beta1",
+  "libraryPackage": "google.golang.org/google/chromeos/moblab/v1beta1",
+  "services": {
+    "BuildService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "BuildClient",
+          "rpcs": {
+            "CheckBuildStageStatus": {
+              "methods": [
+                "CheckBuildStageStatus"
+              ]
+            },
+            "FindMostStableBuild": {
+              "methods": [
+                "FindMostStableBuild"
+              ]
+            },
+            "ListBuildTargets": {
+              "methods": [
+                "ListBuildTargets"
+              ]
+            },
+            "ListBuilds": {
+              "methods": [
+                "ListBuilds"
+              ]
+            },
+            "ListModels": {
+              "methods": [
+                "ListModels"
+              ]
+            },
+            "StageBuild": {
+              "methods": [
+                "StageBuild"
+              ]
+            }
+          }
+        },
+        "rest": {
+          "libraryClient": "BuildClient",
+          "rpcs": {
+            "CheckBuildStageStatus": {
+              "methods": [
+                "CheckBuildStageStatus"
+              ]
+            },
+            "FindMostStableBuild": {
+              "methods": [
+                "FindMostStableBuild"
+              ]
+            },
+            "ListBuildTargets": {
+              "methods": [
+                "ListBuildTargets"
+              ]
+            },
+            "ListBuilds": {
+              "methods": [
+                "ListBuilds"
+              ]
+            },
+            "ListModels": {
+              "methods": [
+                "ListModels"
+              ]
+            },
+            "StageBuild": {
+              "methods": [
+                "StageBuild"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

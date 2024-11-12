@@ -1,0 +1,33 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods.",
+  "language": "go",
+  "protoPackage": "google.apps.drive.activity.v2",
+  "libraryPackage": "google.golang.org/google/apps/drive/activity/v2",
+  "services": {
+    "DriveActivityService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "DriveActivityClient",
+          "rpcs": {
+            "QueryDriveActivity": {
+              "methods": [
+                "QueryDriveActivity"
+              ]
+            }
+          }
+        },
+        "rest": {
+          "libraryClient": "DriveActivityClient",
+          "rpcs": {
+            "QueryDriveActivity": {
+              "methods": [
+                "QueryDriveActivity"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

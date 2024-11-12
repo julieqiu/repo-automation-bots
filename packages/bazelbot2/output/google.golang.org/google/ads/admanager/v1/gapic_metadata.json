@@ -1,0 +1,361 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods.",
+  "language": "go",
+  "protoPackage": "google.ads.admanager.v1",
+  "libraryPackage": "google.golang.org/google/ads/admanager/v1",
+  "services": {
+    "AdUnitService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "AdUnitClient",
+          "rpcs": {
+            "GetAdUnit": {
+              "methods": [
+                "GetAdUnit"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListAdUnitSizes": {
+              "methods": [
+                "ListAdUnitSizes"
+              ]
+            },
+            "ListAdUnits": {
+              "methods": [
+                "ListAdUnits"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "CompanyService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "CompanyClient",
+          "rpcs": {
+            "GetCompany": {
+              "methods": [
+                "GetCompany"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListCompanies": {
+              "methods": [
+                "ListCompanies"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "CustomFieldService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "CustomFieldClient",
+          "rpcs": {
+            "GetCustomField": {
+              "methods": [
+                "GetCustomField"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListCustomFields": {
+              "methods": [
+                "ListCustomFields"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "CustomTargetingKeyService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "CustomTargetingKeyClient",
+          "rpcs": {
+            "GetCustomTargetingKey": {
+              "methods": [
+                "GetCustomTargetingKey"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListCustomTargetingKeys": {
+              "methods": [
+                "ListCustomTargetingKeys"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "CustomTargetingValueService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "CustomTargetingValueClient",
+          "rpcs": {
+            "GetCustomTargetingValue": {
+              "methods": [
+                "GetCustomTargetingValue"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListCustomTargetingValues": {
+              "methods": [
+                "ListCustomTargetingValues"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "EntitySignalsMappingService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "EntitySignalsMappingClient",
+          "rpcs": {
+            "BatchCreateEntitySignalsMappings": {
+              "methods": [
+                "BatchCreateEntitySignalsMappings"
+              ]
+            },
+            "BatchUpdateEntitySignalsMappings": {
+              "methods": [
+                "BatchUpdateEntitySignalsMappings"
+              ]
+            },
+            "CreateEntitySignalsMapping": {
+              "methods": [
+                "CreateEntitySignalsMapping"
+              ]
+            },
+            "GetEntitySignalsMapping": {
+              "methods": [
+                "GetEntitySignalsMapping"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListEntitySignalsMappings": {
+              "methods": [
+                "ListEntitySignalsMappings"
+              ]
+            },
+            "UpdateEntitySignalsMapping": {
+              "methods": [
+                "UpdateEntitySignalsMapping"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "NetworkService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "NetworkClient",
+          "rpcs": {
+            "GetNetwork": {
+              "methods": [
+                "GetNetwork"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "ListNetworks": {
+              "methods": [
+                "ListNetworks"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "OrderService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "OrderClient",
+          "rpcs": {
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "GetOrder": {
+              "methods": [
+                "GetOrder"
+              ]
+            },
+            "ListOrders": {
+              "methods": [
+                "ListOrders"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PlacementService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "PlacementClient",
+          "rpcs": {
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "GetPlacement": {
+              "methods": [
+                "GetPlacement"
+              ]
+            },
+            "ListPlacements": {
+              "methods": [
+                "ListPlacements"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ReportService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "ReportClient",
+          "rpcs": {
+            "CreateReport": {
+              "methods": [
+                "CreateReport"
+              ]
+            },
+            "FetchReportResultRows": {
+              "methods": [
+                "FetchReportResultRows"
+              ]
+            },
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "GetReport": {
+              "methods": [
+                "GetReport"
+              ]
+            },
+            "ListReports": {
+              "methods": [
+                "ListReports"
+              ]
+            },
+            "RunReport": {
+              "methods": [
+                "RunReport"
+              ]
+            },
+            "UpdateReport": {
+              "methods": [
+                "UpdateReport"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "RoleService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "RoleClient",
+          "rpcs": {
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "GetRole": {
+              "methods": [
+                "GetRole"
+              ]
+            },
+            "ListRoles": {
+              "methods": [
+                "ListRoles"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "TaxonomyCategoryService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "TaxonomyCategoryClient",
+          "rpcs": {
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "GetTaxonomyCategory": {
+              "methods": [
+                "GetTaxonomyCategory"
+              ]
+            },
+            "ListTaxonomyCategories": {
+              "methods": [
+                "ListTaxonomyCategories"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "UserService": {
+      "clients": {
+        "rest": {
+          "libraryClient": "UserClient",
+          "rpcs": {
+            "GetOperation": {
+              "methods": [
+                "GetOperation"
+              ]
+            },
+            "GetUser": {
+              "methods": [
+                "GetUser"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

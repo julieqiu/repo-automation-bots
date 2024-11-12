@@ -1,0 +1,840 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/apps/drive/labels/v2",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.apps.drive.labels.v2",
+        "version": "v2"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_BatchDeleteLabelPermissions_sync",
+      "title": "drivelabels BatchDeleteLabelPermissions Sample",
+      "description": "BatchDeleteLabelPermissions deletes Label permissions. Permissions affect the Label resource as a\nwhole, are not revisioned, and do not require publishing.",
+      "file": "LabelClient/BatchDeleteLabelPermissions/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchDeleteLabelPermissions",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.BatchDeleteLabelPermissions",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.BatchDeleteLabelPermissionsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "BatchDeleteLabelPermissions",
+          "fullName": "google.apps.drive.labels.v2.LabelService.BatchDeleteLabelPermissions",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 51,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_BatchUpdateLabelPermissions_sync",
+      "title": "drivelabels BatchUpdateLabelPermissions Sample",
+      "description": "BatchUpdateLabelPermissions updates Label permissions. If a permission for the\nindicated principal doesn't exist, a new Label Permission is created,\notherwise the existing permission is updated. Permissions affect the Label\nresource as a whole, are not revisioned, and do not require publishing.",
+      "file": "LabelClient/BatchUpdateLabelPermissions/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchUpdateLabelPermissions",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.BatchUpdateLabelPermissions",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.BatchUpdateLabelPermissionsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.BatchUpdateLabelPermissionsResponse",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "BatchUpdateLabelPermissions",
+          "fullName": "google.apps.drive.labels.v2.LabelService.BatchUpdateLabelPermissions",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_CreateLabel_sync",
+      "title": "drivelabels CreateLabel Sample",
+      "description": "CreateLabel creates a new Label.",
+      "file": "LabelClient/CreateLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CreateLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.CreateLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.CreateLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.Label",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "CreateLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.CreateLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_CreateLabelPermission_sync",
+      "title": "drivelabels CreateLabelPermission Sample",
+      "description": "CreateLabelPermission updates a Label's permissions. If a permission for the indicated principal\ndoesn't exist, a new Label Permission is created, otherwise the existing\npermission is updated. Permissions affect the Label resource as a whole,\nare not revisioned, and do not require publishing.",
+      "file": "LabelClient/CreateLabelPermission/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CreateLabelPermission",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.CreateLabelPermission",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.CreateLabelPermissionRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.LabelPermission",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "CreateLabelPermission",
+          "fullName": "google.apps.drive.labels.v2.LabelService.CreateLabelPermission",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_DeleteLabel_sync",
+      "title": "drivelabels DeleteLabel Sample",
+      "description": "DeleteLabel permanently deletes a Label and related metadata on Drive Items.\n\nOnce deleted, the Label and related Drive item metadata will be deleted.\nOnly draft Labels, and disabled Labels may be deleted.",
+      "file": "LabelClient/DeleteLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "DeleteLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.DeleteLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.DeleteLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "DeleteLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.DeleteLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 51,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_DeleteLabelPermission_sync",
+      "title": "drivelabels DeleteLabelPermission Sample",
+      "description": "DeleteLabelPermission deletes a Label's permission. Permissions affect the Label resource as a\nwhole, are not revisioned, and do not require publishing.",
+      "file": "LabelClient/DeleteLabelPermission/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "DeleteLabelPermission",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.DeleteLabelPermission",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.DeleteLabelPermissionRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "DeleteLabelPermission",
+          "fullName": "google.apps.drive.labels.v2.LabelService.DeleteLabelPermission",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 51,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_DeltaUpdateLabel_sync",
+      "title": "drivelabels DeltaUpdateLabel Sample",
+      "description": "DeltaUpdateLabel updates a single Label by applying a set of update requests resulting in a\nnew draft revision. The batch update is all-or-nothing: If any of the\nupdate requests are invalid, no changes are applied. The resulting draft\nrevision must be published before the changes may be used with Drive Items.",
+      "file": "LabelClient/DeltaUpdateLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "DeltaUpdateLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.DeltaUpdateLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.DeltaUpdateLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.DeltaUpdateLabelResponse",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "DeltaUpdateLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.DeltaUpdateLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_DisableLabel_sync",
+      "title": "drivelabels DisableLabel Sample",
+      "description": "DisableLabel disable a published Label.\nDisabling a Label will result in a new disabled published revision based on\nthe current published revision. If there is a draft revision, a new\ndisabled draft revision will be created based on the latest draft revision.\nOlder draft revisions will be deleted.\n\nOnce disabled, a label may be deleted with `DeleteLabel`.",
+      "file": "LabelClient/DisableLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "DisableLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.DisableLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.DisableLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.Label",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "DisableLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.DisableLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_EnableLabel_sync",
+      "title": "drivelabels EnableLabel Sample",
+      "description": "EnableLabel enable a disabled Label and restore it to its published state.\nThis will result in a new published revision based on the current disabled\npublished revision. If there is an existing disabled draft revision, a new\nrevision will be created based on that draft and will be enabled.",
+      "file": "LabelClient/EnableLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "EnableLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.EnableLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.EnableLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.Label",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "EnableLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.EnableLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_GetLabel_sync",
+      "title": "drivelabels GetLabel Sample",
+      "description": "GetLabel get a label by its resource name.\nResource name may be any of: \n\n* `labels/{id}` - See `labels/{id}@latest`\n* `labels/{id}@latest` - Gets the latest revision of the label.\n* `labels/{id}@published` - Gets the current published revision of the\nlabel.\n* `labels/{id}@{revision_id}` - Gets the label at the specified revision\nID.",
+      "file": "LabelClient/GetLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.GetLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.GetLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.Label",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "GetLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.GetLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_GetLabelLimits_sync",
+      "title": "drivelabels GetLabelLimits Sample",
+      "description": "GetLabelLimits get the constraints on the structure of a Label; such as, the maximum\nnumber of Fields allowed and maximum length of the label title.",
+      "file": "LabelClient/GetLabelLimits/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetLabelLimits",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.GetLabelLimits",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.GetLabelLimitsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.LabelLimits",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "GetLabelLimits",
+          "fullName": "google.apps.drive.labels.v2.LabelService.GetLabelLimits",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_GetUserCapabilities_sync",
+      "title": "drivelabels GetUserCapabilities Sample",
+      "description": "GetUserCapabilities gets the user capabilities.",
+      "file": "LabelClient/GetUserCapabilities/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetUserCapabilities",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.GetUserCapabilities",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.GetUserCapabilitiesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.UserCapabilities",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "GetUserCapabilities",
+          "fullName": "google.apps.drive.labels.v2.LabelService.GetUserCapabilities",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_ListLabelLocks_sync",
+      "title": "drivelabels ListLabelLocks Sample",
+      "description": "ListLabelLocks lists the LabelLocks on a Label.",
+      "file": "LabelClient/ListLabelLocks/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListLabelLocks",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.ListLabelLocks",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.ListLabelLocksRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "LabelLockIterator",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "ListLabelLocks",
+          "fullName": "google.apps.drive.labels.v2.LabelService.ListLabelLocks",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_ListLabelPermissions_sync",
+      "title": "drivelabels ListLabelPermissions Sample",
+      "description": "ListLabelPermissions lists a Label's permissions.",
+      "file": "LabelClient/ListLabelPermissions/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListLabelPermissions",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.ListLabelPermissions",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.ListLabelPermissionsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "LabelPermissionIterator",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "ListLabelPermissions",
+          "fullName": "google.apps.drive.labels.v2.LabelService.ListLabelPermissions",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_ListLabels_sync",
+      "title": "drivelabels ListLabels Sample",
+      "description": "ListLabels list labels.",
+      "file": "LabelClient/ListLabels/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListLabels",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.ListLabels",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.ListLabelsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "LabelIterator",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "ListLabels",
+          "fullName": "google.apps.drive.labels.v2.LabelService.ListLabels",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_PublishLabel_sync",
+      "title": "drivelabels PublishLabel Sample",
+      "description": "PublishLabel publish all draft changes to the Label. Once published, the Label may not\nreturn to its draft state. See\n`google.apps.drive.labels.v2.Lifecycle` for more information.\n\nPublishing a Label will result in a new published revision. All previous\ndraft revisions will be deleted. Previous published revisions will be kept\nbut are subject to automated deletion as needed.\n\nOnce published, some changes are no longer permitted. Generally, any change\nthat would invalidate or cause new restrictions on existing metadata\nrelated to the Label will be rejected. For example, the following changes\nto a Label will be rejected after the Label is published: \n* The label cannot be directly deleted. It must be disabled first, then\ndeleted.\n* Field.FieldType cannot be changed.\n* Changes to Field validation options cannot reject something that was\npreviously accepted.\n* Reducing the max entries.",
+      "file": "LabelClient/PublishLabel/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "PublishLabel",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.PublishLabel",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.PublishLabelRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.Label",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "PublishLabel",
+          "fullName": "google.apps.drive.labels.v2.LabelService.PublishLabel",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_UpdateLabelCopyMode_sync",
+      "title": "drivelabels UpdateLabelCopyMode Sample",
+      "description": "UpdateLabelCopyMode updates a Label's `CopyMode`. Changes to this policy are not revisioned, do\nnot require publishing, and take effect immediately.",
+      "file": "LabelClient/UpdateLabelCopyMode/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "UpdateLabelCopyMode",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.UpdateLabelCopyMode",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.UpdateLabelCopyModeRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.Label",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "UpdateLabelCopyMode",
+          "fullName": "google.apps.drive.labels.v2.LabelService.UpdateLabelCopyMode",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "drivelabels_v2_generated_LabelService_UpdateLabelPermission_sync",
+      "title": "drivelabels UpdateLabelPermission Sample",
+      "description": "UpdateLabelPermission updates a Label's permissions. If a permission for the indicated principal\ndoesn't exist, a new Label Permission is created, otherwise the existing\npermission is updated. Permissions affect the Label resource as a whole,\nare not revisioned, and do not require publishing.",
+      "file": "LabelClient/UpdateLabelPermission/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "UpdateLabelPermission",
+        "fullName": "google.apps.drive.labels.v2.LabelClient.UpdateLabelPermission",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "labelspb.UpdateLabelPermissionRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*labelspb.LabelPermission",
+        "client": {
+          "shortName": "LabelClient",
+          "fullName": "google.apps.drive.labels.v2.LabelClient"
+        },
+        "method": {
+          "shortName": "UpdateLabelPermission",
+          "fullName": "google.apps.drive.labels.v2.LabelService.UpdateLabelPermission",
+          "service": {
+            "shortName": "LabelService",
+            "fullName": "google.apps.drive.labels.v2.LabelService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

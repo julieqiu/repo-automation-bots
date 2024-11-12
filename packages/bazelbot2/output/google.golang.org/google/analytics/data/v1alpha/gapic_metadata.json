@@ -1,0 +1,163 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods.",
+  "language": "go",
+  "protoPackage": "google.analytics.data.v1alpha",
+  "libraryPackage": "google.golang.org/google/analytics/data/v1alpha",
+  "services": {
+    "AlphaAnalyticsData": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "AlphaAnalyticsDataClient",
+          "rpcs": {
+            "CreateAudienceList": {
+              "methods": [
+                "CreateAudienceList"
+              ]
+            },
+            "CreateRecurringAudienceList": {
+              "methods": [
+                "CreateRecurringAudienceList"
+              ]
+            },
+            "CreateReportTask": {
+              "methods": [
+                "CreateReportTask"
+              ]
+            },
+            "GetAudienceList": {
+              "methods": [
+                "GetAudienceList"
+              ]
+            },
+            "GetPropertyQuotasSnapshot": {
+              "methods": [
+                "GetPropertyQuotasSnapshot"
+              ]
+            },
+            "GetRecurringAudienceList": {
+              "methods": [
+                "GetRecurringAudienceList"
+              ]
+            },
+            "GetReportTask": {
+              "methods": [
+                "GetReportTask"
+              ]
+            },
+            "ListAudienceLists": {
+              "methods": [
+                "ListAudienceLists"
+              ]
+            },
+            "ListRecurringAudienceLists": {
+              "methods": [
+                "ListRecurringAudienceLists"
+              ]
+            },
+            "ListReportTasks": {
+              "methods": [
+                "ListReportTasks"
+              ]
+            },
+            "QueryAudienceList": {
+              "methods": [
+                "QueryAudienceList"
+              ]
+            },
+            "QueryReportTask": {
+              "methods": [
+                "QueryReportTask"
+              ]
+            },
+            "RunFunnelReport": {
+              "methods": [
+                "RunFunnelReport"
+              ]
+            },
+            "SheetExportAudienceList": {
+              "methods": [
+                "SheetExportAudienceList"
+              ]
+            }
+          }
+        },
+        "rest": {
+          "libraryClient": "AlphaAnalyticsDataClient",
+          "rpcs": {
+            "CreateAudienceList": {
+              "methods": [
+                "CreateAudienceList"
+              ]
+            },
+            "CreateRecurringAudienceList": {
+              "methods": [
+                "CreateRecurringAudienceList"
+              ]
+            },
+            "CreateReportTask": {
+              "methods": [
+                "CreateReportTask"
+              ]
+            },
+            "GetAudienceList": {
+              "methods": [
+                "GetAudienceList"
+              ]
+            },
+            "GetPropertyQuotasSnapshot": {
+              "methods": [
+                "GetPropertyQuotasSnapshot"
+              ]
+            },
+            "GetRecurringAudienceList": {
+              "methods": [
+                "GetRecurringAudienceList"
+              ]
+            },
+            "GetReportTask": {
+              "methods": [
+                "GetReportTask"
+              ]
+            },
+            "ListAudienceLists": {
+              "methods": [
+                "ListAudienceLists"
+              ]
+            },
+            "ListRecurringAudienceLists": {
+              "methods": [
+                "ListRecurringAudienceLists"
+              ]
+            },
+            "ListReportTasks": {
+              "methods": [
+                "ListReportTasks"
+              ]
+            },
+            "QueryAudienceList": {
+              "methods": [
+                "QueryAudienceList"
+              ]
+            },
+            "QueryReportTask": {
+              "methods": [
+                "QueryReportTask"
+              ]
+            },
+            "RunFunnelReport": {
+              "methods": [
+                "RunFunnelReport"
+              ]
+            },
+            "SheetExportAudienceList": {
+              "methods": [
+                "SheetExportAudienceList"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/chromeos/moblab/v1beta1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.chromeos.moblab.v1beta1",
+        "version": "v1beta1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "chromeosmoblab_v1beta1_generated_BuildService_CheckBuildStageStatus_sync",
+      "title": "chromeosmoblab CheckBuildStageStatus Sample",
+      "description": "CheckBuildStageStatus checks the stage status for a given build artifact in a partner Google\nCloud Storage bucket.",
+      "file": "BuildClient/CheckBuildStageStatus/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CheckBuildStageStatus",
+        "fullName": "google.chromeos.moblab.v1beta1.BuildClient.CheckBuildStageStatus",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "moblabpb.CheckBuildStageStatusRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*moblabpb.CheckBuildStageStatusResponse",
+        "client": {
+          "shortName": "BuildClient",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildClient"
+        },
+        "method": {
+          "shortName": "CheckBuildStageStatus",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildService.CheckBuildStageStatus",
+          "service": {
+            "shortName": "BuildService",
+            "fullName": "google.chromeos.moblab.v1beta1.BuildService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "chromeosmoblab_v1beta1_generated_BuildService_FindMostStableBuild_sync",
+      "title": "chromeosmoblab FindMostStableBuild Sample",
+      "description": "FindMostStableBuild finds the most stable build for the given build target. The definition of\nthe most stable build is determined by evaluating the following rule in\norder until one is true. If none are true, then there is no stable build\nand it will return an empty response.\n\nEvaluation rules: \n1. Stable channel build with label “Live”\n2. Beta channel build with label “Live”\n3. Dev channel build with label “Live”\n4. Most recent stable channel build with build status Pass\n5. Most recent beta channel build with build status Pass\n6. Most recent dev channel build with build status Pass",
+      "file": "BuildClient/FindMostStableBuild/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "FindMostStableBuild",
+        "fullName": "google.chromeos.moblab.v1beta1.BuildClient.FindMostStableBuild",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "moblabpb.FindMostStableBuildRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*moblabpb.FindMostStableBuildResponse",
+        "client": {
+          "shortName": "BuildClient",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildClient"
+        },
+        "method": {
+          "shortName": "FindMostStableBuild",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildService.FindMostStableBuild",
+          "service": {
+            "shortName": "BuildService",
+            "fullName": "google.chromeos.moblab.v1beta1.BuildService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "chromeosmoblab_v1beta1_generated_BuildService_ListBuildTargets_sync",
+      "title": "chromeosmoblab ListBuildTargets Sample",
+      "description": "ListBuildTargets lists all build targets that a user has access to.",
+      "file": "BuildClient/ListBuildTargets/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListBuildTargets",
+        "fullName": "google.chromeos.moblab.v1beta1.BuildClient.ListBuildTargets",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "moblabpb.ListBuildTargetsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "BuildTargetIterator",
+        "client": {
+          "shortName": "BuildClient",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildClient"
+        },
+        "method": {
+          "shortName": "ListBuildTargets",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildService.ListBuildTargets",
+          "service": {
+            "shortName": "BuildService",
+            "fullName": "google.chromeos.moblab.v1beta1.BuildService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "chromeosmoblab_v1beta1_generated_BuildService_ListBuilds_sync",
+      "title": "chromeosmoblab ListBuilds Sample",
+      "description": "ListBuilds lists all builds for the given build target and model in descending order\nfor the milestones and build versions.",
+      "file": "BuildClient/ListBuilds/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListBuilds",
+        "fullName": "google.chromeos.moblab.v1beta1.BuildClient.ListBuilds",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "moblabpb.ListBuildsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "BuildIterator",
+        "client": {
+          "shortName": "BuildClient",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildClient"
+        },
+        "method": {
+          "shortName": "ListBuilds",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildService.ListBuilds",
+          "service": {
+            "shortName": "BuildService",
+            "fullName": "google.chromeos.moblab.v1beta1.BuildService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "chromeosmoblab_v1beta1_generated_BuildService_ListModels_sync",
+      "title": "chromeosmoblab ListModels Sample",
+      "description": "ListModels lists all models for the given build target.",
+      "file": "BuildClient/ListModels/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListModels",
+        "fullName": "google.chromeos.moblab.v1beta1.BuildClient.ListModels",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "moblabpb.ListModelsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "ModelIterator",
+        "client": {
+          "shortName": "BuildClient",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildClient"
+        },
+        "method": {
+          "shortName": "ListModels",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildService.ListModels",
+          "service": {
+            "shortName": "BuildService",
+            "fullName": "google.chromeos.moblab.v1beta1.BuildService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "chromeosmoblab_v1beta1_generated_BuildService_StageBuild_sync",
+      "title": "chromeosmoblab StageBuild Sample",
+      "description": "StageBuild stages a given build artifact from a internal Google Cloud Storage bucket\nto a partner Google Cloud Storage bucket. The stage will be skipped if all\nthe objects in the partner bucket are the same as in the internal bucket.\nOperation\n<response: [StageBuildResponse][google.chromeos.moblab.v1beta1.StageBuildResponse],\nmetadata: \n[StageBuildMetadata][google.chromeos.moblab.v1beta1.StageBuildMetadata]>",
+      "file": "BuildClient/StageBuild/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "StageBuild",
+        "fullName": "google.chromeos.moblab.v1beta1.BuildClient.StageBuild",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "moblabpb.StageBuildRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "StageBuildOperation",
+        "client": {
+          "shortName": "BuildClient",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildClient"
+        },
+        "method": {
+          "shortName": "StageBuild",
+          "fullName": "google.chromeos.moblab.v1beta1.BuildService.StageBuild",
+          "service": {
+            "shortName": "BuildService",
+            "fullName": "google.chromeos.moblab.v1beta1.BuildService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 58,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

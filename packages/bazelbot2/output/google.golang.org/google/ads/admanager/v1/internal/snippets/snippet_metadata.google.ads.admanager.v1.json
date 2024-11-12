@@ -1,0 +1,2177 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/ads/admanager/v1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.ads.admanager.v1",
+        "version": "v1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "admanager_v1_generated_AdUnitService_GetAdUnit_sync",
+      "title": "admanager GetAdUnit Sample",
+      "description": "GetAdUnit aPI to retrieve an AdUnit object.",
+      "file": "AdUnitClient/GetAdUnit/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetAdUnit",
+        "fullName": "google.ads.admanager.v1.AdUnitClient.GetAdUnit",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetAdUnitRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.AdUnit",
+        "client": {
+          "shortName": "AdUnitClient",
+          "fullName": "google.ads.admanager.v1.AdUnitClient"
+        },
+        "method": {
+          "shortName": "GetAdUnit",
+          "fullName": "google.ads.admanager.v1.AdUnitService.GetAdUnit",
+          "service": {
+            "shortName": "AdUnitService",
+            "fullName": "google.ads.admanager.v1.AdUnitService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_AdUnitService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "AdUnitClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.AdUnitClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "AdUnitClient",
+          "fullName": "google.ads.admanager.v1.AdUnitClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_AdUnitService_ListAdUnitSizes_sync",
+      "title": "admanager ListAdUnitSizes Sample",
+      "description": "ListAdUnitSizes aPI to retrieve a list of AdUnitSize objects.",
+      "file": "AdUnitClient/ListAdUnitSizes/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListAdUnitSizes",
+        "fullName": "google.ads.admanager.v1.AdUnitClient.ListAdUnitSizes",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListAdUnitSizesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "AdUnitSizeIterator",
+        "client": {
+          "shortName": "AdUnitClient",
+          "fullName": "google.ads.admanager.v1.AdUnitClient"
+        },
+        "method": {
+          "shortName": "ListAdUnitSizes",
+          "fullName": "google.ads.admanager.v1.AdUnitService.ListAdUnitSizes",
+          "service": {
+            "shortName": "AdUnitService",
+            "fullName": "google.ads.admanager.v1.AdUnitService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_AdUnitService_ListAdUnits_sync",
+      "title": "admanager ListAdUnits Sample",
+      "description": "ListAdUnits aPI to retrieve a list of AdUnit objects.",
+      "file": "AdUnitClient/ListAdUnits/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListAdUnits",
+        "fullName": "google.ads.admanager.v1.AdUnitClient.ListAdUnits",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListAdUnitsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "AdUnitIterator",
+        "client": {
+          "shortName": "AdUnitClient",
+          "fullName": "google.ads.admanager.v1.AdUnitClient"
+        },
+        "method": {
+          "shortName": "ListAdUnits",
+          "fullName": "google.ads.admanager.v1.AdUnitService.ListAdUnits",
+          "service": {
+            "shortName": "AdUnitService",
+            "fullName": "google.ads.admanager.v1.AdUnitService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CompanyService_GetCompany_sync",
+      "title": "admanager GetCompany Sample",
+      "description": "GetCompany aPI to retrieve a `Company` object.",
+      "file": "CompanyClient/GetCompany/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetCompany",
+        "fullName": "google.ads.admanager.v1.CompanyClient.GetCompany",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetCompanyRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Company",
+        "client": {
+          "shortName": "CompanyClient",
+          "fullName": "google.ads.admanager.v1.CompanyClient"
+        },
+        "method": {
+          "shortName": "GetCompany",
+          "fullName": "google.ads.admanager.v1.CompanyService.GetCompany",
+          "service": {
+            "shortName": "CompanyService",
+            "fullName": "google.ads.admanager.v1.CompanyService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CompanyService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "CompanyClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.CompanyClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "CompanyClient",
+          "fullName": "google.ads.admanager.v1.CompanyClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CompanyService_ListCompanies_sync",
+      "title": "admanager ListCompanies Sample",
+      "description": "ListCompanies aPI to retrieve a list of `Company` objects.",
+      "file": "CompanyClient/ListCompanies/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListCompanies",
+        "fullName": "google.ads.admanager.v1.CompanyClient.ListCompanies",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListCompaniesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "CompanyIterator",
+        "client": {
+          "shortName": "CompanyClient",
+          "fullName": "google.ads.admanager.v1.CompanyClient"
+        },
+        "method": {
+          "shortName": "ListCompanies",
+          "fullName": "google.ads.admanager.v1.CompanyService.ListCompanies",
+          "service": {
+            "shortName": "CompanyService",
+            "fullName": "google.ads.admanager.v1.CompanyService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomFieldService_GetCustomField_sync",
+      "title": "admanager GetCustomField Sample",
+      "description": "GetCustomField aPI to retrieve a `CustomField` object.",
+      "file": "CustomFieldClient/GetCustomField/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetCustomField",
+        "fullName": "google.ads.admanager.v1.CustomFieldClient.GetCustomField",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetCustomFieldRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.CustomField",
+        "client": {
+          "shortName": "CustomFieldClient",
+          "fullName": "google.ads.admanager.v1.CustomFieldClient"
+        },
+        "method": {
+          "shortName": "GetCustomField",
+          "fullName": "google.ads.admanager.v1.CustomFieldService.GetCustomField",
+          "service": {
+            "shortName": "CustomFieldService",
+            "fullName": "google.ads.admanager.v1.CustomFieldService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomFieldService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "CustomFieldClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.CustomFieldClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "CustomFieldClient",
+          "fullName": "google.ads.admanager.v1.CustomFieldClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomFieldService_ListCustomFields_sync",
+      "title": "admanager ListCustomFields Sample",
+      "description": "ListCustomFields aPI to retrieve a list of `CustomField` objects.",
+      "file": "CustomFieldClient/ListCustomFields/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListCustomFields",
+        "fullName": "google.ads.admanager.v1.CustomFieldClient.ListCustomFields",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListCustomFieldsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "CustomFieldIterator",
+        "client": {
+          "shortName": "CustomFieldClient",
+          "fullName": "google.ads.admanager.v1.CustomFieldClient"
+        },
+        "method": {
+          "shortName": "ListCustomFields",
+          "fullName": "google.ads.admanager.v1.CustomFieldService.ListCustomFields",
+          "service": {
+            "shortName": "CustomFieldService",
+            "fullName": "google.ads.admanager.v1.CustomFieldService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomTargetingKeyService_GetCustomTargetingKey_sync",
+      "title": "admanager GetCustomTargetingKey Sample",
+      "description": "GetCustomTargetingKey aPI to retrieve a `CustomTargetingKey` object.",
+      "file": "CustomTargetingKeyClient/GetCustomTargetingKey/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetCustomTargetingKey",
+        "fullName": "google.ads.admanager.v1.CustomTargetingKeyClient.GetCustomTargetingKey",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetCustomTargetingKeyRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.CustomTargetingKey",
+        "client": {
+          "shortName": "CustomTargetingKeyClient",
+          "fullName": "google.ads.admanager.v1.CustomTargetingKeyClient"
+        },
+        "method": {
+          "shortName": "GetCustomTargetingKey",
+          "fullName": "google.ads.admanager.v1.CustomTargetingKeyService.GetCustomTargetingKey",
+          "service": {
+            "shortName": "CustomTargetingKeyService",
+            "fullName": "google.ads.admanager.v1.CustomTargetingKeyService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomTargetingKeyService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "CustomTargetingKeyClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.CustomTargetingKeyClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "CustomTargetingKeyClient",
+          "fullName": "google.ads.admanager.v1.CustomTargetingKeyClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomTargetingKeyService_ListCustomTargetingKeys_sync",
+      "title": "admanager ListCustomTargetingKeys Sample",
+      "description": "ListCustomTargetingKeys aPI to retrieve a list of `CustomTargetingKey` objects.",
+      "file": "CustomTargetingKeyClient/ListCustomTargetingKeys/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListCustomTargetingKeys",
+        "fullName": "google.ads.admanager.v1.CustomTargetingKeyClient.ListCustomTargetingKeys",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListCustomTargetingKeysRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "CustomTargetingKeyIterator",
+        "client": {
+          "shortName": "CustomTargetingKeyClient",
+          "fullName": "google.ads.admanager.v1.CustomTargetingKeyClient"
+        },
+        "method": {
+          "shortName": "ListCustomTargetingKeys",
+          "fullName": "google.ads.admanager.v1.CustomTargetingKeyService.ListCustomTargetingKeys",
+          "service": {
+            "shortName": "CustomTargetingKeyService",
+            "fullName": "google.ads.admanager.v1.CustomTargetingKeyService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomTargetingValueService_GetCustomTargetingValue_sync",
+      "title": "admanager GetCustomTargetingValue Sample",
+      "description": "GetCustomTargetingValue aPI to retrieve a `CustomTargetingValue` object.",
+      "file": "CustomTargetingValueClient/GetCustomTargetingValue/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetCustomTargetingValue",
+        "fullName": "google.ads.admanager.v1.CustomTargetingValueClient.GetCustomTargetingValue",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetCustomTargetingValueRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.CustomTargetingValue",
+        "client": {
+          "shortName": "CustomTargetingValueClient",
+          "fullName": "google.ads.admanager.v1.CustomTargetingValueClient"
+        },
+        "method": {
+          "shortName": "GetCustomTargetingValue",
+          "fullName": "google.ads.admanager.v1.CustomTargetingValueService.GetCustomTargetingValue",
+          "service": {
+            "shortName": "CustomTargetingValueService",
+            "fullName": "google.ads.admanager.v1.CustomTargetingValueService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomTargetingValueService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "CustomTargetingValueClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.CustomTargetingValueClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "CustomTargetingValueClient",
+          "fullName": "google.ads.admanager.v1.CustomTargetingValueClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_CustomTargetingValueService_ListCustomTargetingValues_sync",
+      "title": "admanager ListCustomTargetingValues Sample",
+      "description": "ListCustomTargetingValues aPI to retrieve a list of `CustomTargetingValue` objects.",
+      "file": "CustomTargetingValueClient/ListCustomTargetingValues/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListCustomTargetingValues",
+        "fullName": "google.ads.admanager.v1.CustomTargetingValueClient.ListCustomTargetingValues",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListCustomTargetingValuesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "CustomTargetingValueIterator",
+        "client": {
+          "shortName": "CustomTargetingValueClient",
+          "fullName": "google.ads.admanager.v1.CustomTargetingValueClient"
+        },
+        "method": {
+          "shortName": "ListCustomTargetingValues",
+          "fullName": "google.ads.admanager.v1.CustomTargetingValueService.ListCustomTargetingValues",
+          "service": {
+            "shortName": "CustomTargetingValueService",
+            "fullName": "google.ads.admanager.v1.CustomTargetingValueService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_BatchCreateEntitySignalsMappings_sync",
+      "title": "admanager BatchCreateEntitySignalsMappings Sample",
+      "description": "BatchCreateEntitySignalsMappings aPI to batch create `EntitySignalsMapping` objects.",
+      "file": "EntitySignalsMappingClient/BatchCreateEntitySignalsMappings/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchCreateEntitySignalsMappings",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.BatchCreateEntitySignalsMappings",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.BatchCreateEntitySignalsMappingsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.BatchCreateEntitySignalsMappingsResponse",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "BatchCreateEntitySignalsMappings",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingService.BatchCreateEntitySignalsMappings",
+          "service": {
+            "shortName": "EntitySignalsMappingService",
+            "fullName": "google.ads.admanager.v1.EntitySignalsMappingService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_BatchUpdateEntitySignalsMappings_sync",
+      "title": "admanager BatchUpdateEntitySignalsMappings Sample",
+      "description": "BatchUpdateEntitySignalsMappings aPI to batch update `EntitySignalsMapping` objects.",
+      "file": "EntitySignalsMappingClient/BatchUpdateEntitySignalsMappings/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchUpdateEntitySignalsMappings",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.BatchUpdateEntitySignalsMappings",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.BatchUpdateEntitySignalsMappingsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.BatchUpdateEntitySignalsMappingsResponse",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "BatchUpdateEntitySignalsMappings",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingService.BatchUpdateEntitySignalsMappings",
+          "service": {
+            "shortName": "EntitySignalsMappingService",
+            "fullName": "google.ads.admanager.v1.EntitySignalsMappingService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_CreateEntitySignalsMapping_sync",
+      "title": "admanager CreateEntitySignalsMapping Sample",
+      "description": "CreateEntitySignalsMapping aPI to create an `EntitySignalsMapping` object.",
+      "file": "EntitySignalsMappingClient/CreateEntitySignalsMapping/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CreateEntitySignalsMapping",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.CreateEntitySignalsMapping",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.CreateEntitySignalsMappingRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.EntitySignalsMapping",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "CreateEntitySignalsMapping",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingService.CreateEntitySignalsMapping",
+          "service": {
+            "shortName": "EntitySignalsMappingService",
+            "fullName": "google.ads.admanager.v1.EntitySignalsMappingService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_GetEntitySignalsMapping_sync",
+      "title": "admanager GetEntitySignalsMapping Sample",
+      "description": "GetEntitySignalsMapping aPI to retrieve a `EntitySignalsMapping` object.",
+      "file": "EntitySignalsMappingClient/GetEntitySignalsMapping/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetEntitySignalsMapping",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.GetEntitySignalsMapping",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetEntitySignalsMappingRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.EntitySignalsMapping",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "GetEntitySignalsMapping",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingService.GetEntitySignalsMapping",
+          "service": {
+            "shortName": "EntitySignalsMappingService",
+            "fullName": "google.ads.admanager.v1.EntitySignalsMappingService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "EntitySignalsMappingClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_ListEntitySignalsMappings_sync",
+      "title": "admanager ListEntitySignalsMappings Sample",
+      "description": "ListEntitySignalsMappings aPI to retrieve a list of `EntitySignalsMapping` objects.",
+      "file": "EntitySignalsMappingClient/ListEntitySignalsMappings/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListEntitySignalsMappings",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.ListEntitySignalsMappings",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListEntitySignalsMappingsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "EntitySignalsMappingIterator",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "ListEntitySignalsMappings",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingService.ListEntitySignalsMappings",
+          "service": {
+            "shortName": "EntitySignalsMappingService",
+            "fullName": "google.ads.admanager.v1.EntitySignalsMappingService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_EntitySignalsMappingService_UpdateEntitySignalsMapping_sync",
+      "title": "admanager UpdateEntitySignalsMapping Sample",
+      "description": "UpdateEntitySignalsMapping aPI to update an `EntitySignalsMapping` object.",
+      "file": "EntitySignalsMappingClient/UpdateEntitySignalsMapping/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "UpdateEntitySignalsMapping",
+        "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient.UpdateEntitySignalsMapping",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.UpdateEntitySignalsMappingRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.EntitySignalsMapping",
+        "client": {
+          "shortName": "EntitySignalsMappingClient",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingClient"
+        },
+        "method": {
+          "shortName": "UpdateEntitySignalsMapping",
+          "fullName": "google.ads.admanager.v1.EntitySignalsMappingService.UpdateEntitySignalsMapping",
+          "service": {
+            "shortName": "EntitySignalsMappingService",
+            "fullName": "google.ads.admanager.v1.EntitySignalsMappingService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_NetworkService_GetNetwork_sync",
+      "title": "admanager GetNetwork Sample",
+      "description": "GetNetwork aPI to retrieve a Network object.",
+      "file": "NetworkClient/GetNetwork/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetNetwork",
+        "fullName": "google.ads.admanager.v1.NetworkClient.GetNetwork",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetNetworkRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Network",
+        "client": {
+          "shortName": "NetworkClient",
+          "fullName": "google.ads.admanager.v1.NetworkClient"
+        },
+        "method": {
+          "shortName": "GetNetwork",
+          "fullName": "google.ads.admanager.v1.NetworkService.GetNetwork",
+          "service": {
+            "shortName": "NetworkService",
+            "fullName": "google.ads.admanager.v1.NetworkService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_NetworkService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "NetworkClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.NetworkClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "NetworkClient",
+          "fullName": "google.ads.admanager.v1.NetworkClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_NetworkService_ListNetworks_sync",
+      "title": "admanager ListNetworks Sample",
+      "description": "ListNetworks aPI to retrieve all the networks the current user has access to.",
+      "file": "NetworkClient/ListNetworks/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListNetworks",
+        "fullName": "google.ads.admanager.v1.NetworkClient.ListNetworks",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListNetworksRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.ListNetworksResponse",
+        "client": {
+          "shortName": "NetworkClient",
+          "fullName": "google.ads.admanager.v1.NetworkClient"
+        },
+        "method": {
+          "shortName": "ListNetworks",
+          "fullName": "google.ads.admanager.v1.NetworkService.ListNetworks",
+          "service": {
+            "shortName": "NetworkService",
+            "fullName": "google.ads.admanager.v1.NetworkService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_OrderService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "OrderClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.OrderClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "OrderClient",
+          "fullName": "google.ads.admanager.v1.OrderClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_OrderService_GetOrder_sync",
+      "title": "admanager GetOrder Sample",
+      "description": "GetOrder aPI to retrieve an Order object.",
+      "file": "OrderClient/GetOrder/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOrder",
+        "fullName": "google.ads.admanager.v1.OrderClient.GetOrder",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetOrderRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Order",
+        "client": {
+          "shortName": "OrderClient",
+          "fullName": "google.ads.admanager.v1.OrderClient"
+        },
+        "method": {
+          "shortName": "GetOrder",
+          "fullName": "google.ads.admanager.v1.OrderService.GetOrder",
+          "service": {
+            "shortName": "OrderService",
+            "fullName": "google.ads.admanager.v1.OrderService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_OrderService_ListOrders_sync",
+      "title": "admanager ListOrders Sample",
+      "description": "ListOrders aPI to retrieve a list of `Order` objects.\n\nFields used for literal matching in filter string: \n* `order_id`\n* `display_name`\n* `external_order_id`",
+      "file": "OrderClient/ListOrders/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListOrders",
+        "fullName": "google.ads.admanager.v1.OrderClient.ListOrders",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListOrdersRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "OrderIterator",
+        "client": {
+          "shortName": "OrderClient",
+          "fullName": "google.ads.admanager.v1.OrderClient"
+        },
+        "method": {
+          "shortName": "ListOrders",
+          "fullName": "google.ads.admanager.v1.OrderService.ListOrders",
+          "service": {
+            "shortName": "OrderService",
+            "fullName": "google.ads.admanager.v1.OrderService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_PlacementService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "PlacementClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.PlacementClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "PlacementClient",
+          "fullName": "google.ads.admanager.v1.PlacementClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_PlacementService_GetPlacement_sync",
+      "title": "admanager GetPlacement Sample",
+      "description": "GetPlacement aPI to retrieve a `Placement` object.",
+      "file": "PlacementClient/GetPlacement/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetPlacement",
+        "fullName": "google.ads.admanager.v1.PlacementClient.GetPlacement",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetPlacementRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Placement",
+        "client": {
+          "shortName": "PlacementClient",
+          "fullName": "google.ads.admanager.v1.PlacementClient"
+        },
+        "method": {
+          "shortName": "GetPlacement",
+          "fullName": "google.ads.admanager.v1.PlacementService.GetPlacement",
+          "service": {
+            "shortName": "PlacementService",
+            "fullName": "google.ads.admanager.v1.PlacementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_PlacementService_ListPlacements_sync",
+      "title": "admanager ListPlacements Sample",
+      "description": "ListPlacements aPI to retrieve a list of `Placement` objects.",
+      "file": "PlacementClient/ListPlacements/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListPlacements",
+        "fullName": "google.ads.admanager.v1.PlacementClient.ListPlacements",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListPlacementsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "PlacementIterator",
+        "client": {
+          "shortName": "PlacementClient",
+          "fullName": "google.ads.admanager.v1.PlacementClient"
+        },
+        "method": {
+          "shortName": "ListPlacements",
+          "fullName": "google.ads.admanager.v1.PlacementService.ListPlacements",
+          "service": {
+            "shortName": "PlacementService",
+            "fullName": "google.ads.admanager.v1.PlacementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_CreateReport_sync",
+      "title": "admanager CreateReport Sample",
+      "description": "CreateReport aPI to create a `Report` object.",
+      "file": "ReportClient/CreateReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CreateReport",
+        "fullName": "google.ads.admanager.v1.ReportClient.CreateReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.CreateReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Report",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "CreateReport",
+          "fullName": "google.ads.admanager.v1.ReportService.CreateReport",
+          "service": {
+            "shortName": "ReportService",
+            "fullName": "google.ads.admanager.v1.ReportService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_FetchReportResultRows_sync",
+      "title": "admanager FetchReportResultRows Sample",
+      "description": "FetchReportResultRows returns the result rows from a completed report.\nThe caller must have previously called `RunReport` and waited for that\noperation to complete. The rows will be returned according to the order\nspecified by the `sorts` member of the report definition.",
+      "file": "ReportClient/FetchReportResultRows/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "FetchReportResultRows",
+        "fullName": "google.ads.admanager.v1.ReportClient.FetchReportResultRows",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.FetchReportResultRowsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "Report_DataTable_RowIterator",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "FetchReportResultRows",
+          "fullName": "google.ads.admanager.v1.ReportService.FetchReportResultRows",
+          "service": {
+            "shortName": "ReportService",
+            "fullName": "google.ads.admanager.v1.ReportService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "ReportClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.ReportClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_GetReport_sync",
+      "title": "admanager GetReport Sample",
+      "description": "GetReport aPI to retrieve a `Report` object.",
+      "file": "ReportClient/GetReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetReport",
+        "fullName": "google.ads.admanager.v1.ReportClient.GetReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Report",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "GetReport",
+          "fullName": "google.ads.admanager.v1.ReportService.GetReport",
+          "service": {
+            "shortName": "ReportService",
+            "fullName": "google.ads.admanager.v1.ReportService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_ListReports_sync",
+      "title": "admanager ListReports Sample",
+      "description": "ListReports aPI to retrieve a list of `Report` objects.",
+      "file": "ReportClient/ListReports/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListReports",
+        "fullName": "google.ads.admanager.v1.ReportClient.ListReports",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListReportsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "ReportIterator",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "ListReports",
+          "fullName": "google.ads.admanager.v1.ReportService.ListReports",
+          "service": {
+            "shortName": "ReportService",
+            "fullName": "google.ads.admanager.v1.ReportService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_RunReport_sync",
+      "title": "admanager RunReport Sample",
+      "description": "RunReport initiates the execution of an existing report asynchronously. Users can\nget the report by polling this operation via\n`OperationsService.GetOperation`.\nPoll every 5 seconds initially, with an exponential\nbackoff. Once a report is complete, the operation will contain a\n`RunReportResponse` in its response field containing a report_result that\ncan be passed to the `FetchReportResultRows` method to retrieve the report\ndata.",
+      "file": "ReportClient/RunReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "RunReport",
+        "fullName": "google.ads.admanager.v1.ReportClient.RunReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.RunReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "RunReportOperation",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "RunReport",
+          "fullName": "google.ads.admanager.v1.ReportService.RunReport",
+          "service": {
+            "shortName": "ReportService",
+            "fullName": "google.ads.admanager.v1.ReportService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 58,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_ReportService_UpdateReport_sync",
+      "title": "admanager UpdateReport Sample",
+      "description": "UpdateReport aPI to update a `Report` object.",
+      "file": "ReportClient/UpdateReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "UpdateReport",
+        "fullName": "google.ads.admanager.v1.ReportClient.UpdateReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.UpdateReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Report",
+        "client": {
+          "shortName": "ReportClient",
+          "fullName": "google.ads.admanager.v1.ReportClient"
+        },
+        "method": {
+          "shortName": "UpdateReport",
+          "fullName": "google.ads.admanager.v1.ReportService.UpdateReport",
+          "service": {
+            "shortName": "ReportService",
+            "fullName": "google.ads.admanager.v1.ReportService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_RoleService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "RoleClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.RoleClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "RoleClient",
+          "fullName": "google.ads.admanager.v1.RoleClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_RoleService_GetRole_sync",
+      "title": "admanager GetRole Sample",
+      "description": "GetRole aPI to retrieve a `Role` object.",
+      "file": "RoleClient/GetRole/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetRole",
+        "fullName": "google.ads.admanager.v1.RoleClient.GetRole",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetRoleRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.Role",
+        "client": {
+          "shortName": "RoleClient",
+          "fullName": "google.ads.admanager.v1.RoleClient"
+        },
+        "method": {
+          "shortName": "GetRole",
+          "fullName": "google.ads.admanager.v1.RoleService.GetRole",
+          "service": {
+            "shortName": "RoleService",
+            "fullName": "google.ads.admanager.v1.RoleService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_RoleService_ListRoles_sync",
+      "title": "admanager ListRoles Sample",
+      "description": "ListRoles aPI to retrieve a list of `Role` objects.",
+      "file": "RoleClient/ListRoles/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListRoles",
+        "fullName": "google.ads.admanager.v1.RoleClient.ListRoles",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListRolesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "RoleIterator",
+        "client": {
+          "shortName": "RoleClient",
+          "fullName": "google.ads.admanager.v1.RoleClient"
+        },
+        "method": {
+          "shortName": "ListRoles",
+          "fullName": "google.ads.admanager.v1.RoleService.ListRoles",
+          "service": {
+            "shortName": "RoleService",
+            "fullName": "google.ads.admanager.v1.RoleService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_TaxonomyCategoryService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "TaxonomyCategoryClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.TaxonomyCategoryClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "TaxonomyCategoryClient",
+          "fullName": "google.ads.admanager.v1.TaxonomyCategoryClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_TaxonomyCategoryService_GetTaxonomyCategory_sync",
+      "title": "admanager GetTaxonomyCategory Sample",
+      "description": "GetTaxonomyCategory aPI to retrieve a `TaxonomyCategory` object.",
+      "file": "TaxonomyCategoryClient/GetTaxonomyCategory/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetTaxonomyCategory",
+        "fullName": "google.ads.admanager.v1.TaxonomyCategoryClient.GetTaxonomyCategory",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetTaxonomyCategoryRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.TaxonomyCategory",
+        "client": {
+          "shortName": "TaxonomyCategoryClient",
+          "fullName": "google.ads.admanager.v1.TaxonomyCategoryClient"
+        },
+        "method": {
+          "shortName": "GetTaxonomyCategory",
+          "fullName": "google.ads.admanager.v1.TaxonomyCategoryService.GetTaxonomyCategory",
+          "service": {
+            "shortName": "TaxonomyCategoryService",
+            "fullName": "google.ads.admanager.v1.TaxonomyCategoryService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_TaxonomyCategoryService_ListTaxonomyCategories_sync",
+      "title": "admanager ListTaxonomyCategories Sample",
+      "description": "ListTaxonomyCategories aPI to retrieve a list of `TaxonomyCategory` objects.",
+      "file": "TaxonomyCategoryClient/ListTaxonomyCategories/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListTaxonomyCategories",
+        "fullName": "google.ads.admanager.v1.TaxonomyCategoryClient.ListTaxonomyCategories",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.ListTaxonomyCategoriesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "TaxonomyCategoryIterator",
+        "client": {
+          "shortName": "TaxonomyCategoryClient",
+          "fullName": "google.ads.admanager.v1.TaxonomyCategoryClient"
+        },
+        "method": {
+          "shortName": "ListTaxonomyCategories",
+          "fullName": "google.ads.admanager.v1.TaxonomyCategoryService.ListTaxonomyCategories",
+          "service": {
+            "shortName": "TaxonomyCategoryService",
+            "fullName": "google.ads.admanager.v1.TaxonomyCategoryService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_UserService_GetOperation_sync",
+      "title": "admanager GetOperation Sample",
+      "description": "GetOperation is a utility method from google.longrunning.Operations.",
+      "file": "UserClient/GetOperation/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetOperation",
+        "fullName": "google.ads.admanager.v1.UserClient.GetOperation",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "longrunningpb.GetOperationRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*longrunningpb.Operation",
+        "client": {
+          "shortName": "UserClient",
+          "fullName": "google.ads.admanager.v1.UserClient"
+        },
+        "method": {
+          "shortName": "GetOperation",
+          "fullName": "google.longrunning.Operations.GetOperation",
+          "service": {
+            "shortName": "Operations",
+            "fullName": "google.longrunning.Operations"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admanager_v1_generated_UserService_GetUser_sync",
+      "title": "admanager GetUser Sample",
+      "description": "GetUser aPI to retrieve a User object.\n\nTo get the current user, the resource name\n`networks/{networkCode}/users/me` can be used.",
+      "file": "UserClient/GetUser/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetUser",
+        "fullName": "google.ads.admanager.v1.UserClient.GetUser",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admanagerpb.GetUserRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admanagerpb.User",
+        "client": {
+          "shortName": "UserClient",
+          "fullName": "google.ads.admanager.v1.UserClient"
+        },
+        "method": {
+          "shortName": "GetUser",
+          "fullName": "google.ads.admanager.v1.UserService.GetUser",
+          "service": {
+            "shortName": "UserService",
+            "fullName": "google.ads.admanager.v1.UserService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

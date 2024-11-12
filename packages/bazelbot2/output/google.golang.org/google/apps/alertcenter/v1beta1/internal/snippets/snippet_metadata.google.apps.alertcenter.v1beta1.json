@@ -1,0 +1,520 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/apps/alertcenter/v1beta1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.apps.alertcenter.v1beta1",
+        "version": "v1beta1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_BatchDeleteAlerts_sync",
+      "title": "alertcenter BatchDeleteAlerts Sample",
+      "description": "BatchDeleteAlerts performs batch delete operation on alerts.",
+      "file": "Client/BatchDeleteAlerts/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchDeleteAlerts",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.BatchDeleteAlerts",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.BatchDeleteAlertsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.BatchDeleteAlertsResponse",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "BatchDeleteAlerts",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.BatchDeleteAlerts",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_BatchUndeleteAlerts_sync",
+      "title": "alertcenter BatchUndeleteAlerts Sample",
+      "description": "BatchUndeleteAlerts performs batch undelete operation on alerts.",
+      "file": "Client/BatchUndeleteAlerts/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchUndeleteAlerts",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.BatchUndeleteAlerts",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.BatchUndeleteAlertsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.BatchUndeleteAlertsResponse",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "BatchUndeleteAlerts",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.BatchUndeleteAlerts",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_CreateAlertFeedback_sync",
+      "title": "alertcenter CreateAlertFeedback Sample",
+      "description": "CreateAlertFeedback creates new feedback for an alert. Attempting to create a feedback for\na non-existent alert returns `NOT_FOUND` error. Attempting to create a\nfeedback for an alert that is marked for deletion returns\n`FAILED_PRECONDITION' error.",
+      "file": "Client/CreateAlertFeedback/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CreateAlertFeedback",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.CreateAlertFeedback",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.CreateAlertFeedbackRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.AlertFeedback",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "CreateAlertFeedback",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.CreateAlertFeedback",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_DeleteAlert_sync",
+      "title": "alertcenter DeleteAlert Sample",
+      "description": "DeleteAlert marks the specified alert for deletion. An alert that has been marked for\ndeletion is removed from Alert Center after 30 days.\nMarking an alert for deletion has no effect on an alert which has\nalready been marked for deletion. Attempting to mark a nonexistent alert\nfor deletion results in a `NOT_FOUND` error.",
+      "file": "Client/DeleteAlert/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "DeleteAlert",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.DeleteAlert",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.DeleteAlertRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "DeleteAlert",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.DeleteAlert",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 51,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_GetAlert_sync",
+      "title": "alertcenter GetAlert Sample",
+      "description": "GetAlert gets the specified alert. Attempting to get a nonexistent alert returns\n`NOT_FOUND` error.",
+      "file": "Client/GetAlert/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetAlert",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.GetAlert",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.GetAlertRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.Alert",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "GetAlert",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.GetAlert",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_GetAlertMetadata_sync",
+      "title": "alertcenter GetAlertMetadata Sample",
+      "description": "GetAlertMetadata returns the metadata of an alert. Attempting to get metadata for\na non-existent alert returns `NOT_FOUND` error.",
+      "file": "Client/GetAlertMetadata/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetAlertMetadata",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.GetAlertMetadata",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.GetAlertMetadataRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.AlertMetadata",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "GetAlertMetadata",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.GetAlertMetadata",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_GetSettings_sync",
+      "title": "alertcenter GetSettings Sample",
+      "description": "GetSettings returns customer-level settings.",
+      "file": "Client/GetSettings/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetSettings",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.GetSettings",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.GetSettingsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.Settings",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "GetSettings",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.GetSettings",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_ListAlertFeedback_sync",
+      "title": "alertcenter ListAlertFeedback Sample",
+      "description": "ListAlertFeedback lists all the feedback for an alert. Attempting to list feedbacks for\na non-existent alert returns `NOT_FOUND` error.",
+      "file": "Client/ListAlertFeedback/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListAlertFeedback",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.ListAlertFeedback",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.ListAlertFeedbackRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.ListAlertFeedbackResponse",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "ListAlertFeedback",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.ListAlertFeedback",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_ListAlerts_sync",
+      "title": "alertcenter ListAlerts Sample",
+      "description": "ListAlerts lists the alerts.",
+      "file": "Client/ListAlerts/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListAlerts",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.ListAlerts",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.ListAlertsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "AlertIterator",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "ListAlerts",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.ListAlerts",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_UndeleteAlert_sync",
+      "title": "alertcenter UndeleteAlert Sample",
+      "description": "UndeleteAlert restores, or \"undeletes\", an alert that was marked for deletion within the\npast 30 days. Attempting to undelete an alert which was marked for deletion\nover 30 days ago (which has been removed from the Alert Center database) or\na nonexistent alert returns a `NOT_FOUND` error. Attempting to\nundelete an alert which has not been marked for deletion has no effect.",
+      "file": "Client/UndeleteAlert/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "UndeleteAlert",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.UndeleteAlert",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.UndeleteAlertRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.Alert",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "UndeleteAlert",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.UndeleteAlert",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "alertcenter_v1beta1_generated_AlertCenterService_UpdateSettings_sync",
+      "title": "alertcenter UpdateSettings Sample",
+      "description": "UpdateSettings updates the customer-level settings.",
+      "file": "Client/UpdateSettings/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "UpdateSettings",
+        "fullName": "google.apps.alertcenter.v1beta1.Client.UpdateSettings",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "alertcenterpb.UpdateSettingsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*alertcenterpb.Settings",
+        "client": {
+          "shortName": "Client",
+          "fullName": "google.apps.alertcenter.v1beta1.Client"
+        },
+        "method": {
+          "shortName": "UpdateSettings",
+          "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService.UpdateSettings",
+          "service": {
+            "shortName": "AlertCenterService",
+            "fullName": "google.apps.alertcenter.v1beta1.AlertCenterService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

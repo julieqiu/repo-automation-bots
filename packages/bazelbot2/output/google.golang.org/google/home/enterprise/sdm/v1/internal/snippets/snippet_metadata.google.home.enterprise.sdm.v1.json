@@ -1,0 +1,337 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/home/enterprise/sdm/v1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.home.enterprise.sdm.v1",
+        "version": "v1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_ExecuteDeviceCommand_sync",
+      "title": "smartdevicemanagement ExecuteDeviceCommand Sample",
+      "description": "ExecuteDeviceCommand executes a command to device managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/ExecuteDeviceCommand/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ExecuteDeviceCommand",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.ExecuteDeviceCommand",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.ExecuteDeviceCommandRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*sdmpb.ExecuteDeviceCommandResponse",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "ExecuteDeviceCommand",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ExecuteDeviceCommand",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_GetDevice_sync",
+      "title": "smartdevicemanagement GetDevice Sample",
+      "description": "GetDevice gets a device managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/GetDevice/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetDevice",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.GetDevice",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.GetDeviceRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*sdmpb.Device",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "GetDevice",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.GetDevice",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_GetRoom_sync",
+      "title": "smartdevicemanagement GetRoom Sample",
+      "description": "GetRoom gets a room managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/GetRoom/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetRoom",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.GetRoom",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.GetRoomRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*sdmpb.Room",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "GetRoom",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.GetRoom",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_GetStructure_sync",
+      "title": "smartdevicemanagement GetStructure Sample",
+      "description": "GetStructure gets a structure managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/GetStructure/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetStructure",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.GetStructure",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.GetStructureRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*sdmpb.Structure",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "GetStructure",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.GetStructure",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_ListDevices_sync",
+      "title": "smartdevicemanagement ListDevices Sample",
+      "description": "ListDevices lists devices managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/ListDevices/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListDevices",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.ListDevices",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.ListDevicesRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "DeviceIterator",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "ListDevices",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ListDevices",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_ListRooms_sync",
+      "title": "smartdevicemanagement ListRooms Sample",
+      "description": "ListRooms lists rooms managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/ListRooms/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListRooms",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.ListRooms",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.ListRoomsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "RoomIterator",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "ListRooms",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ListRooms",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "smartdevicemanagement_v1_generated_SmartDeviceManagementService_ListStructures_sync",
+      "title": "smartdevicemanagement ListStructures Sample",
+      "description": "ListStructures lists structures managed by the enterprise.",
+      "file": "SmartDeviceManagementClient/ListStructures/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListStructures",
+        "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient.ListStructures",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "sdmpb.ListStructuresRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "StructureIterator",
+        "client": {
+          "shortName": "SmartDeviceManagementClient",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementClient"
+        },
+        "method": {
+          "shortName": "ListStructures",
+          "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ListStructures",
+          "service": {
+            "shortName": "SmartDeviceManagementService",
+            "fullName": "google.home.enterprise.sdm.v1.SmartDeviceManagementService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

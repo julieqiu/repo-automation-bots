@@ -1,0 +1,107 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/ads/admob/v1",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.ads.admob.v1",
+        "version": "v1"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "admob_v1_generated_AdMobApi_GetPublisherAccount_sync",
+      "title": "admob GetPublisherAccount Sample",
+      "description": "GetPublisherAccount gets information about the specified AdMob publisher account.",
+      "file": "AdMobApiClient/GetPublisherAccount/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetPublisherAccount",
+        "fullName": "google.ads.admob.v1.AdMobApiClient.GetPublisherAccount",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admobpb.GetPublisherAccountRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*admobpb.PublisherAccount",
+        "client": {
+          "shortName": "AdMobApiClient",
+          "fullName": "google.ads.admob.v1.AdMobApiClient"
+        },
+        "method": {
+          "shortName": "GetPublisherAccount",
+          "fullName": "google.ads.admob.v1.AdMobApi.GetPublisherAccount",
+          "service": {
+            "shortName": "AdMobApi",
+            "fullName": "google.ads.admob.v1.AdMobApi"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "admob_v1_generated_AdMobApi_ListPublisherAccounts_sync",
+      "title": "admob ListPublisherAccounts Sample",
+      "description": "ListPublisherAccounts lists the AdMob publisher account accessible with the client credential.\nCurrently, all credentials have access to at most one AdMob account.",
+      "file": "AdMobApiClient/ListPublisherAccounts/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListPublisherAccounts",
+        "fullName": "google.ads.admob.v1.AdMobApiClient.ListPublisherAccounts",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "admobpb.ListPublisherAccountsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "PublisherAccountIterator",
+        "client": {
+          "shortName": "AdMobApiClient",
+          "fullName": "google.ads.admob.v1.AdMobApiClient"
+        },
+        "method": {
+          "shortName": "ListPublisherAccounts",
+          "fullName": "google.ads.admob.v1.AdMobApi.ListPublisherAccounts",
+          "service": {
+            "shortName": "AdMobApi",
+            "fullName": "google.ads.admob.v1.AdMobApi"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/analytics/data/v1beta",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.analytics.data.v1beta",
+        "version": "v1beta"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_BatchRunPivotReports_sync",
+      "title": "analyticsdata BatchRunPivotReports Sample",
+      "description": "BatchRunPivotReports returns multiple pivot reports in a batch. All reports must be for the same\nGA4 Property.",
+      "file": "BetaAnalyticsDataClient/BatchRunPivotReports/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchRunPivotReports",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.BatchRunPivotReports",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.BatchRunPivotReportsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.BatchRunPivotReportsResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "BatchRunPivotReports",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.BatchRunPivotReports",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_BatchRunReports_sync",
+      "title": "analyticsdata BatchRunReports Sample",
+      "description": "BatchRunReports returns multiple reports in a batch. All reports must be for the same\nGA4 Property.",
+      "file": "BetaAnalyticsDataClient/BatchRunReports/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "BatchRunReports",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.BatchRunReports",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.BatchRunReportsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.BatchRunReportsResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "BatchRunReports",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.BatchRunReports",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_CheckCompatibility_sync",
+      "title": "analyticsdata CheckCompatibility Sample",
+      "description": "CheckCompatibility this compatibility method lists dimensions and metrics that can be added to\na report request and maintain compatibility. This method fails if the\nrequest's dimensions and metrics are incompatible.\n\nIn Google Analytics, reports fail if they request incompatible dimensions\nand/or metrics; in that case, you will need to remove dimensions and/or\nmetrics from the incompatible report until the report is compatible.\n\nThe Realtime and Core reports have different compatibility rules. This\nmethod checks compatibility for Core reports.",
+      "file": "BetaAnalyticsDataClient/CheckCompatibility/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CheckCompatibility",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.CheckCompatibility",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.CheckCompatibilityRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.CheckCompatibilityResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "CheckCompatibility",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.CheckCompatibility",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_CreateAudienceExport_sync",
+      "title": "analyticsdata CreateAudienceExport Sample",
+      "description": "CreateAudienceExport creates an audience export for later retrieval. This method quickly returns\nthe audience export's resource name and initiates a long running\nasynchronous request to form an audience export. To export the users in an\naudience export, first create the audience export through this method and\nthen send the audience resource name to the `QueryAudienceExport` method.\n\nSee [Creating an Audience\nExport](https: //developers.google.com/analytics/devguides/reporting/data/v1/audience-list-basics)\nfor an introduction to Audience Exports with examples.\n\nAn audience export is a snapshot of the users currently in the audience at\nthe time of audience export creation. Creating audience exports for one\naudience on different days will return different results as users enter and\nexit the audience.\n\nAudiences in Google Analytics 4 allow you to segment your users in the ways\nthat are important to your business. To learn more, see\nhttps: //support.google.com/analytics/answer/9267572. Audience exports\ncontain the users in each audience.\n\nAudience Export APIs have some methods at alpha and other methods at beta\nstability. The intention is to advance methods to beta stability after some\nfeedback and adoption. To give your feedback on this API, complete the\n[Google Analytics Audience Export API\nFeedback](https: //forms.gle/EeA5u5LW6PEggtCEA) form.",
+      "file": "BetaAnalyticsDataClient/CreateAudienceExport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "CreateAudienceExport",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.CreateAudienceExport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.CreateAudienceExportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "CreateAudienceExportOperation",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "CreateAudienceExport",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.CreateAudienceExport",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 58,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_GetAudienceExport_sync",
+      "title": "analyticsdata GetAudienceExport Sample",
+      "description": "GetAudienceExport gets configuration metadata about a specific audience export. This method\ncan be used to understand an audience export after it has been created.\n\nSee [Creating an Audience\nExport](https: //developers.google.com/analytics/devguides/reporting/data/v1/audience-list-basics)\nfor an introduction to Audience Exports with examples.\n\nAudience Export APIs have some methods at alpha and other methods at beta\nstability. The intention is to advance methods to beta stability after some\nfeedback and adoption. To give your feedback on this API, complete the\n[Google Analytics Audience Export API\nFeedback](https: //forms.gle/EeA5u5LW6PEggtCEA) form.",
+      "file": "BetaAnalyticsDataClient/GetAudienceExport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetAudienceExport",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.GetAudienceExport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.GetAudienceExportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.AudienceExport",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "GetAudienceExport",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.GetAudienceExport",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_GetMetadata_sync",
+      "title": "analyticsdata GetMetadata Sample",
+      "description": "GetMetadata returns metadata for dimensions and metrics available in reporting methods.\nUsed to explore the dimensions and metrics. In this method, a Google\nAnalytics GA4 Property Identifier is specified in the request, and\nthe metadata response includes Custom dimensions and metrics as well as\nUniversal metadata.\n\nFor example if a custom metric with parameter name `levels_unlocked` is\nregistered to a property, the Metadata response will contain\n`customEvent: levels_unlocked`. Universal metadata are dimensions and\nmetrics applicable to any property such as `country` and `totalUsers`.",
+      "file": "BetaAnalyticsDataClient/GetMetadata/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "GetMetadata",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.GetMetadata",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.GetMetadataRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.Metadata",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "GetMetadata",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.GetMetadata",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_ListAudienceExports_sync",
+      "title": "analyticsdata ListAudienceExports Sample",
+      "description": "ListAudienceExports lists all audience exports for a property. This method can be used for you\nto find and reuse existing audience exports rather than creating\nunnecessary new audience exports. The same audience can have multiple\naudience exports that represent the export of users that were in an\naudience on different days.\n\nSee [Creating an Audience\nExport](https: //developers.google.com/analytics/devguides/reporting/data/v1/audience-list-basics)\nfor an introduction to Audience Exports with examples.\n\nAudience Export APIs have some methods at alpha and other methods at beta\nstability. The intention is to advance methods to beta stability after some\nfeedback and adoption. To give your feedback on this API, complete the\n[Google Analytics Audience Export API\nFeedback](https: //forms.gle/EeA5u5LW6PEggtCEA) form.",
+      "file": "BetaAnalyticsDataClient/ListAudienceExports/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "ListAudienceExports",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.ListAudienceExports",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.ListAudienceExportsRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "AudienceExportIterator",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "ListAudienceExports",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.ListAudienceExports",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_QueryAudienceExport_sync",
+      "title": "analyticsdata QueryAudienceExport Sample",
+      "description": "QueryAudienceExport retrieves an audience export of users. After creating an audience, the\nusers are not immediately available for exporting. First, a request to\n`CreateAudienceExport` is necessary to create an audience export of users,\nand then second, this method is used to retrieve the users in the audience\nexport.\n\nSee [Creating an Audience\nExport](https: //developers.google.com/analytics/devguides/reporting/data/v1/audience-list-basics)\nfor an introduction to Audience Exports with examples.\n\nAudiences in Google Analytics 4 allow you to segment your users in the ways\nthat are important to your business. To learn more, see\nhttps: //support.google.com/analytics/answer/9267572.\n\nAudience Export APIs have some methods at alpha and other methods at beta\nstability. The intention is to advance methods to beta stability after some\nfeedback and adoption. To give your feedback on this API, complete the\n[Google Analytics Audience Export API\nFeedback](https: //forms.gle/EeA5u5LW6PEggtCEA) form.",
+      "file": "BetaAnalyticsDataClient/QueryAudienceExport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "QueryAudienceExport",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.QueryAudienceExport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.QueryAudienceExportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.QueryAudienceExportResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "QueryAudienceExport",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.QueryAudienceExport",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_RunPivotReport_sync",
+      "title": "analyticsdata RunPivotReport Sample",
+      "description": "RunPivotReport returns a customized pivot report of your Google Analytics event data.\nPivot reports are more advanced and expressive formats than regular\nreports. In a pivot report, dimensions are only visible if they are\nincluded in a pivot. Multiple pivots can be specified to further dissect\nyour data.",
+      "file": "BetaAnalyticsDataClient/RunPivotReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "RunPivotReport",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.RunPivotReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.RunPivotReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.RunPivotReportResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "RunPivotReport",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.RunPivotReport",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_RunRealtimeReport_sync",
+      "title": "analyticsdata RunRealtimeReport Sample",
+      "description": "RunRealtimeReport returns a customized report of realtime event data for your property.\nEvents appear in realtime reports seconds after they have been sent to\nthe Google Analytics. Realtime reports show events and usage data for the\nperiods of time ranging from the present moment to 30 minutes ago (up to\n60 minutes for Google Analytics 360 properties).\n\nFor a guide to constructing realtime requests & understanding responses,\nsee [Creating a Realtime\nReport](https: //developers.google.com/analytics/devguides/reporting/data/v1/realtime-basics).",
+      "file": "BetaAnalyticsDataClient/RunRealtimeReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "RunRealtimeReport",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.RunRealtimeReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.RunRealtimeReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.RunRealtimeReportResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "RunRealtimeReport",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.RunRealtimeReport",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    },
+    {
+      "regionTag": "analyticsdata_v1beta_generated_BetaAnalyticsData_RunReport_sync",
+      "title": "analyticsdata RunReport Sample",
+      "description": "RunReport returns a customized report of your Google Analytics event data. Reports\ncontain statistics derived from data collected by the Google Analytics\ntracking code. The data returned from the API is as a table with columns\nfor the requested dimensions and metrics. Metrics are individual\nmeasurements of user activity on your property, such as active users or\nevent count. Dimensions break down metrics across some common criteria,\nsuch as country or event name.\n\nFor a guide to constructing requests & understanding responses, see\n[Creating a\nReport](https: //developers.google.com/analytics/devguides/reporting/data/v1/basics).",
+      "file": "BetaAnalyticsDataClient/RunReport/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "RunReport",
+        "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient.RunReport",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "datapb.RunReportRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "*datapb.RunReportResponse",
+        "client": {
+          "shortName": "BetaAnalyticsDataClient",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsDataClient"
+        },
+        "method": {
+          "shortName": "RunReport",
+          "fullName": "google.analytics.data.v1beta.BetaAnalyticsData.RunReport",
+          "service": {
+            "shortName": "BetaAnalyticsData",
+            "fullName": "google.analytics.data.v1beta.BetaAnalyticsData"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 53,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods.",
+  "language": "go",
+  "protoPackage": "google.apps.drive.labels.v2beta",
+  "libraryPackage": "google.golang.org/google/apps/drive/labels/v2beta",
+  "services": {
+    "LabelService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "LabelClient",
+          "rpcs": {
+            "BatchDeleteLabelPermissions": {
+              "methods": [
+                "BatchDeleteLabelPermissions"
+              ]
+            },
+            "BatchUpdateLabelPermissions": {
+              "methods": [
+                "BatchUpdateLabelPermissions"
+              ]
+            },
+            "CreateLabel": {
+              "methods": [
+                "CreateLabel"
+              ]
+            },
+            "CreateLabelPermission": {
+              "methods": [
+                "CreateLabelPermission"
+              ]
+            },
+            "DeleteLabel": {
+              "methods": [
+                "DeleteLabel"
+              ]
+            },
+            "DeleteLabelPermission": {
+              "methods": [
+                "DeleteLabelPermission"
+              ]
+            },
+            "DeltaUpdateLabel": {
+              "methods": [
+                "DeltaUpdateLabel"
+              ]
+            },
+            "DisableLabel": {
+              "methods": [
+                "DisableLabel"
+              ]
+            },
+            "EnableLabel": {
+              "methods": [
+                "EnableLabel"
+              ]
+            },
+            "GetLabel": {
+              "methods": [
+                "GetLabel"
+              ]
+            },
+            "GetLabelLimits": {
+              "methods": [
+                "GetLabelLimits"
+              ]
+            },
+            "GetUserCapabilities": {
+              "methods": [
+                "GetUserCapabilities"
+              ]
+            },
+            "ListLabelLocks": {
+              "methods": [
+                "ListLabelLocks"
+              ]
+            },
+            "ListLabelPermissions": {
+              "methods": [
+                "ListLabelPermissions"
+              ]
+            },
+            "ListLabels": {
+              "methods": [
+                "ListLabels"
+              ]
+            },
+            "PublishLabel": {
+              "methods": [
+                "PublishLabel"
+              ]
+            },
+            "UpdateLabelCopyMode": {
+              "methods": [
+                "UpdateLabelCopyMode"
+              ]
+            },
+            "UpdateLabelPermission": {
+              "methods": [
+                "UpdateLabelPermission"
+              ]
+            }
+          }
+        },
+        "rest": {
+          "libraryClient": "LabelClient",
+          "rpcs": {
+            "BatchDeleteLabelPermissions": {
+              "methods": [
+                "BatchDeleteLabelPermissions"
+              ]
+            },
+            "BatchUpdateLabelPermissions": {
+              "methods": [
+                "BatchUpdateLabelPermissions"
+              ]
+            },
+            "CreateLabel": {
+              "methods": [
+                "CreateLabel"
+              ]
+            },
+            "CreateLabelPermission": {
+              "methods": [
+                "CreateLabelPermission"
+              ]
+            },
+            "DeleteLabel": {
+              "methods": [
+                "DeleteLabel"
+              ]
+            },
+            "DeleteLabelPermission": {
+              "methods": [
+                "DeleteLabelPermission"
+              ]
+            },
+            "DeltaUpdateLabel": {
+              "methods": [
+                "DeltaUpdateLabel"
+              ]
+            },
+            "DisableLabel": {
+              "methods": [
+                "DisableLabel"
+              ]
+            },
+            "EnableLabel": {
+              "methods": [
+                "EnableLabel"
+              ]
+            },
+            "GetLabel": {
+              "methods": [
+                "GetLabel"
+              ]
+            },
+            "GetLabelLimits": {
+              "methods": [
+                "GetLabelLimits"
+              ]
+            },
+            "GetUserCapabilities": {
+              "methods": [
+                "GetUserCapabilities"
+              ]
+            },
+            "ListLabelLocks": {
+              "methods": [
+                "ListLabelLocks"
+              ]
+            },
+            "ListLabelPermissions": {
+              "methods": [
+                "ListLabelPermissions"
+              ]
+            },
+            "ListLabels": {
+              "methods": [
+                "ListLabels"
+              ]
+            },
+            "PublishLabel": {
+              "methods": [
+                "PublishLabel"
+              ]
+            },
+            "UpdateLabelCopyMode": {
+              "methods": [
+                "UpdateLabelCopyMode"
+              ]
+            },
+            "UpdateLabelPermission": {
+              "methods": [
+                "UpdateLabelPermission"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

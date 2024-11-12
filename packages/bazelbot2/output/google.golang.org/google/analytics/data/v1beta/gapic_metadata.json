@@ -1,0 +1,133 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods.",
+  "language": "go",
+  "protoPackage": "google.analytics.data.v1beta",
+  "libraryPackage": "google.golang.org/google/analytics/data/v1beta",
+  "services": {
+    "BetaAnalyticsData": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "BetaAnalyticsDataClient",
+          "rpcs": {
+            "BatchRunPivotReports": {
+              "methods": [
+                "BatchRunPivotReports"
+              ]
+            },
+            "BatchRunReports": {
+              "methods": [
+                "BatchRunReports"
+              ]
+            },
+            "CheckCompatibility": {
+              "methods": [
+                "CheckCompatibility"
+              ]
+            },
+            "CreateAudienceExport": {
+              "methods": [
+                "CreateAudienceExport"
+              ]
+            },
+            "GetAudienceExport": {
+              "methods": [
+                "GetAudienceExport"
+              ]
+            },
+            "GetMetadata": {
+              "methods": [
+                "GetMetadata"
+              ]
+            },
+            "ListAudienceExports": {
+              "methods": [
+                "ListAudienceExports"
+              ]
+            },
+            "QueryAudienceExport": {
+              "methods": [
+                "QueryAudienceExport"
+              ]
+            },
+            "RunPivotReport": {
+              "methods": [
+                "RunPivotReport"
+              ]
+            },
+            "RunRealtimeReport": {
+              "methods": [
+                "RunRealtimeReport"
+              ]
+            },
+            "RunReport": {
+              "methods": [
+                "RunReport"
+              ]
+            }
+          }
+        },
+        "rest": {
+          "libraryClient": "BetaAnalyticsDataClient",
+          "rpcs": {
+            "BatchRunPivotReports": {
+              "methods": [
+                "BatchRunPivotReports"
+              ]
+            },
+            "BatchRunReports": {
+              "methods": [
+                "BatchRunReports"
+              ]
+            },
+            "CheckCompatibility": {
+              "methods": [
+                "CheckCompatibility"
+              ]
+            },
+            "CreateAudienceExport": {
+              "methods": [
+                "CreateAudienceExport"
+              ]
+            },
+            "GetAudienceExport": {
+              "methods": [
+                "GetAudienceExport"
+              ]
+            },
+            "GetMetadata": {
+              "methods": [
+                "GetMetadata"
+              ]
+            },
+            "ListAudienceExports": {
+              "methods": [
+                "ListAudienceExports"
+              ]
+            },
+            "QueryAudienceExport": {
+              "methods": [
+                "QueryAudienceExport"
+              ]
+            },
+            "RunPivotReport": {
+              "methods": [
+                "RunPivotReport"
+              ]
+            },
+            "RunRealtimeReport": {
+              "methods": [
+                "RunRealtimeReport"
+              ]
+            },
+            "RunReport": {
+              "methods": [
+                "RunReport"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

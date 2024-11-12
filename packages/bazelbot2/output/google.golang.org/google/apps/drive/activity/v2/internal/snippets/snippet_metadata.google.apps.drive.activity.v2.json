@@ -1,0 +1,61 @@
+{
+  "clientLibrary": {
+    "name": "google.golang.org/google/apps/drive/activity/v2",
+    "version": "$VERSION",
+    "language": "GO",
+    "apis": [
+      {
+        "id": "google.apps.drive.activity.v2",
+        "version": "v2"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "regionTag": "driveactivity_v2_generated_DriveActivityService_QueryDriveActivity_sync",
+      "title": "driveactivity QueryDriveActivity Sample",
+      "description": "QueryDriveActivity query past activity in Google Drive.",
+      "file": "DriveActivityClient/QueryDriveActivity/main.go",
+      "language": "GO",
+      "clientMethod": {
+        "shortName": "QueryDriveActivity",
+        "fullName": "google.apps.drive.activity.v2.DriveActivityClient.QueryDriveActivity",
+        "parameters": [
+          {
+            "type": "context.Context",
+            "name": "ctx"
+          },
+          {
+            "type": "activitypb.QueryDriveActivityRequest",
+            "name": "req"
+          },
+          {
+            "type": "...gax.CallOption",
+            "name": "opts"
+          }
+        ],
+        "resultType": "DriveActivityIterator",
+        "client": {
+          "shortName": "DriveActivityClient",
+          "fullName": "google.apps.drive.activity.v2.DriveActivityClient"
+        },
+        "method": {
+          "shortName": "QueryDriveActivity",
+          "fullName": "google.apps.drive.activity.v2.DriveActivityService.QueryDriveActivity",
+          "service": {
+            "shortName": "DriveActivityService",
+            "fullName": "google.apps.drive.activity.v2.DriveActivityService"
+          }
+        }
+      },
+      "origin": "API_DEFINITION",
+      "segments": [
+        {
+          "start": 18,
+          "end": 66,
+          "type": "FULL"
+        }
+      ]
+    }
+  ]
+}
