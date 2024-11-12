@@ -67,9 +67,11 @@ func (p *postProcessor) Manifest() (_ map[string]ManifestEntry, err error) {
 		entries[manual.DistributionName] = *manual
 	}
 	for inputDir, li := range p.config.GoogleapisToImportPath {
-		if !strings.HasSuffix(inputDir, "secretmanager/apiv1") {
-			continue
-		}
+		/*
+			if !strings.HasSuffix(inputDir, "secretmanager/apiv1") {
+				continue
+			}
+		*/
 		if li.ServiceConfig == "" {
 			continue
 		}

@@ -62,3 +62,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241021214115-324edc3d5d38 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
+
+replace cloud.google.com/go/secretmanager => ../../../secretmanager

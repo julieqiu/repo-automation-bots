@@ -26,6 +26,7 @@ import (
 	"strings"
 
 	"github.com/googleapis/repo-automation-bots/packages/bazelbot2/postprocessor/execv"
+	"github.com/julieqiu/derrors"
 )
 
 var (
@@ -120,13 +121,14 @@ func Vet(dir string) error {
 }
 
 // CurrentMod returns the module name of the provided directory.
-func CurrentMod(dir string) (string, error) {
+func CurrentMod(dir string) (_ string, err error) {
+	defer derrors.Wrap(&err, "CurrentMod(%q)", dir)
 	log.Println("detecting current module")
 	c := execv.Command("go", "list", "-m")
+	c.Stderr = os.Stderr
 	c.Dir = dir
-	c.Env = []string{"GOWORK=off"}
+	c.Env = []string{"GOWORK=off", "GOMODCACHE=/tmp/modcache"}
 	var out []byte
-	var err error
 	if out, err = c.Output(); err != nil {
 		return "", err
 	}

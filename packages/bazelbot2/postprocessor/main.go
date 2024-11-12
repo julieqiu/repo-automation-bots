@@ -26,6 +26,7 @@ import (
 	"html/template"
 	"io/fs"
 	"log"
+	"log/slog"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -213,11 +214,14 @@ func (p *postProcessor) run(ctx context.Context) (err error) {
 func (p *postProcessor) InitializeNewModules(manifest map[string]ManifestEntry) error {
 	log.Println("checking for new modules and clients")
 	for _, moduleName := range p.config.Modules {
-		if !strings.Contains(moduleName, "secretmanager") {
-			continue
-		}
+		/*
+			if !strings.Contains(moduleName, "secretmanager") {
+				continue
+			}
+		*/
 		modulePath := filepath.Join(p.googleCloudDir, moduleName)
 		importPath := filepath.Join("cloud.google.com/go", moduleName)
+		slog.Info(fmt.Sprintf("InitializeNewModules: %s", importPath))
 
 		pathToModVersionFile := filepath.Join(modulePath, "internal/version.go")
 		// Check if <module>/internal/version.go file exists

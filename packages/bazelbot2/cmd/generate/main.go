@@ -24,63 +24,87 @@ import (
 	"strings"
 )
 
-var repo = flag.String("repo", "", "")
+var (
+	repo      = flag.String("repo", "", "")
+	outputDir = flag.String("outputp", ".", "")
+)
 
 func main() {
 	flag.Parse()
-	if err := run(*repo); err != nil {
+	if err := run(*repo, *outputDir); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func run(repoDir string) error {
-	cmd := exec.Command("bazelisk", "query", `filter("-(go|csharp|java|php|ruby|nodejs|py)$", kind("rule", //...:*))`)
+func run(repoDir, outputDir string) error {
+	/*
+		targets, err := queryTargets(repoDir)
+		if err != nil {
+			return err
+		}
+		if err := fetchTargets(repoDir, targets); err != nil {
+			return err
+		}
+
+		for _, target := range targets {
+			if strings.Contains(target, "csharp") || strings.Contains(target, "ruby") {
+				continue
+			}
+			if err := bazelBuild(repoDir, target); err != nil {
+				return err
+			}
+			if err := untar(repoDir, target); err != nil {
+				return err
+			}
+		}
+	*/
+	if err := runGoPostprocessor(repoDir, outputDir); err != nil {
+		return err
+	}
+	return nil
+}
+
+func queryTargets(repoDir string) ([]string, error) {
+	cmd := exec.Command("bazelisk", "query", `filter("-(go)$", kind("rule", //...:*))`)
+	slog.Info(cmd.String())
+	slog.Info(strings.Repeat("-", 80))
 	cmd.Dir = repoDir
 	cmd.Stderr = os.Stderr
 	output, err := cmd.Output()
 	if err != nil {
-		return err
+		return nil, err
 	}
 	targets := strings.Fields(string(output))
+	return targets, nil
+}
 
+func fetchTargets(repoDir string, targets []string) error {
 	// Confirm that bazel can fetch remote build dependencies before building
 	// with -k.  Otherwise, we can't distinguish a build failure due to a bad proto
 	// vs. a build failure due to transient network issue.
-	/*
-		if err := runCommand(repoDir, "bazelisk", append([]string{"fetch"}, targets...)...); err != nil {
-			return err
-		}
-	*/
+	return runCommand(repoDir, "bazelisk", append([]string{"fetch"}, targets...)...)
+}
 
-	for _, target := range targets {
-		if strings.Contains(target, "csharp") || strings.Contains(target, "ruby") {
-			continue
-		}
-		if strings.Contains(target, "secretmanager/v1:gapi-cloud-secretmanager-v1-go") {
-			// Invoke bazel build. Limiting job count helps to avoid memory error b/376777535.
-			/*
-				if err := runCommand(repoDir, "bazelisk", "build", "--jobs=8", "-k", target); err != nil {
-					return err
-				}
-			*/
-			parts := strings.SplitN(target, ":", 2)
-			parts[0] = strings.TrimPrefix(parts[0], "//")
-			tarFile := fmt.Sprintf("%s/bazel-bin/%s/%s.tar.gz", repoDir, parts[0], parts[1])
-			if err := runCommand(".", "tar", "-xf", tarFile); err != nil {
-				return err
-			}
-			if err := runCommand(".", "go", "run", "./postprocessor",
-				"--client-root", "cloud.google.com/go",
-				"--googleapis-dir", repoDir,
-				"--branch", "julie-pr1",
-				"--dirs", "cloud.google.com/go/secretmanager",
-				"--pr-file", "prfile.txt",
-			); err != nil {
-				return err
-			}
-		}
-	}
-	return nil
+func bazelBuild(repoDir, target string) error {
+	// Invoke bazel build. Limiting job count helps to avoid memory error b/376777535.
+	return runCommand(repoDir, "bazelisk", "build", "--jobs=8", "-k", target)
+}
+
+func untar(repoDir, target string) error {
+	parts := strings.SplitN(target, ":", 2)
+	parts[0] = strings.TrimPrefix(parts[0], "//")
+	tarFile := fmt.Sprintf("%s/bazel-bin/%s/%s.tar.gz", repoDir, parts[0], parts[1])
+	return runCommand(*outputDir, "tar", "-xf", tarFile)
+}
+
+func runGoPostprocessor(repoDir, outputDir string) error {
+	return runCommand(".", "go", "run", "./postprocessor",
+		"--client-root", fmt.Sprintf("cloud.google.com/go"),
+		"--googleapis-dir", repoDir,
+		"--branch", "julie-pr1",
+		"--dirs", fmt.Sprintf("cloud.google.com/go"),
+		"--pr-file", "prfile.txt",
+	)
 }
 
 func runCommand(dir, c string, args ...string) error {
